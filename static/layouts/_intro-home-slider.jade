@@ -1,0 +1,70 @@
+//         = intro-slider         *
+.intro-slider.swiper-container
+  //           ¬ intro-slider__inner           /
+  .intro-slider__inner.swiper-wrapper
+    .swiper-slide(style="background-image: url('#{path + 'images/upload/intro/intro_slide.jpg'}')")
+      .container.swiper-slide__inner
+        .intro-hero
+          .intro-hero__inner(data-swiper-parallax="-150")
+            .h1.intro-title
+              span.promo-title special promo
+              span.intro-title__text Facial Treatment
+            p Keep your face and skin feeling healthy and revitalized
+            .intro-hero__price
+              span.cost $90
+              span.cost-disable $170
+            .btn.btn--warn learn more
+
+
+    .swiper-slide(style="background-image: url('#{path + 'images/upload/intro/intro_slide.jpg'}')")
+      .container.swiper-slide__inner
+        .intro-hero.intro-hero--center
+          .intro-hero__inner(data-swiper-parallax="-200")
+            .h1.intro-title.intro-title--decor Honeymoon Package
+            p Receive a complimentary upgrade and save #[strong 15% off]
+              br
+              | on your honeymoon vacation in Gossip Spa Boutique!
+            .btn.btn--warn(data-toggle="modal", data-target="#modal-inquiry") reservation inquiry
+
+
+    .swiper-slide(style="background-image: url('#{path + 'images/upload/intro/intro_slide.jpg'}')")
+      .container.swiper-slide__inner
+        .intro-hero
+          .intro-hero__inner(data-swiper-parallax="-150")
+            .h1.intro-title
+              span.intro-title__text.under Luxury Suite
+              span.flag $650 / night
+            .list-type
+              ul
+                li Large 52″ cable TV
+                li Fast & free wi-fi access
+                li Jacuzzi
+                li Workzone area
+            .btn.btn--warn Book now
+
+
+    .swiper-slide(style="background-image: url('#{path + 'images/upload/intro/intro_slide.jpg'}')")
+      .container.swiper-slide__inner
+        .intro-hero.intro-hero--center
+          .intro-hero__inner(data-swiper-parallax="-200")
+            .h1.intro-title
+              span.intro-title__text Airport Transfer
+              span.promo-title 24-hours Available
+
+            p Our representative will meet and drive you to Gossip Spa Boutique hotel. Simply tell us your flight number and we will do the rest.
+            .btn.btn--warn order now only for $80
+
+  //           end intro-slider__inner           /
+
+  //           ¬ control-panel__wrapper           /
+  .container.control-panel__wrapper
+    .control-panel
+      .swiper-button-prev.control-panel__nav.prev
+        .fa.fa-angle-left
+      .swiper-button-next.control-panel__nav.next
+        .fa.fa-angle-right
+      .swiper-pagination.control-panel__dots
+      .swiper-scrollbar
+  //           end control-panel__wrapper           /
+
+//         end intro-slider         /

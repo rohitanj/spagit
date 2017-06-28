@@ -1,0 +1,45 @@
+//         ¬ hm-history         *
+section.hm-history
+  .panels-wrapper
+    .container
+      header
+        h1.title-hidden title
+
+      .row
+        .col-xs-12.col-sm-6
+          article.panel-board
+            header
+              h2.h1.panel-board__title Royal History
+            .panel-board__main
+              p Certain but she but shyness why cottage. Gay the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence
+
+              p By impossible of in difficulty discovered celebrated ye. Justice joy manners boy met resolve produce. Bed head loud next plan rent had easy add him. As earnestly shameless elsewhere defective estimable fulfilled of. Esteem my advice it an excuse enable.
+
+            footer.panel-board__bottom
+              a.btn.btn--warn(href="#") learn more
+
+        .col-xs-12.col-sm-6.hm-history__slides.panel-wd.panel-wd--right
+          #historyCarousel.hm-history-carousel.owl-theme.owl-carousel
+            .panel-wd__slide
+              img(src=path + 'images/upload/carousel/history_slide_1.jpg', alt="")
+            .panel-wd__slide
+              img(src=path + 'images/upload/carousel/history_slide_2.jpg', alt="")
+            .panel-wd__slide
+              img(src=path + 'images/upload/carousel/history_slide_3.jpg', alt="")
+            .panel-wd__slide
+              img(src=path + 'images/upload/carousel/history_slide_4.jpg', alt="")
+
+
+          //           ¬ control panels           /
+          .control-panel.control-panel--mobile.visible-xs
+            button.control-panel__nav.prev: i.fa.fa-angle-left
+            button.control-panel__nav.next: i.fa.fa-angle-right
+
+          .control-panel.hm-history__controls
+            button.control-panel__nav.prev.hidden-xs: i.fa.fa-angle-left
+            button.control-panel__nav.next.hidden-xs: i.fa.fa-angle-right
+
+            #controlDots.control-panel__dots
+          //           end control panels           /
+
+//         end hm-history         /

@@ -1,0 +1,8 @@
+.spa-menu__item
+  .spa-menu__heading
+    each category in spa_menu.items_left
+      figure.spa-menu__thumb
+        img.img-responsive(src='images/upload/#{category.img}', alt="")
+      h3.spa-menu__title=category.title
+      span.spa-menu__cost=category.coast
+      p=category.preview

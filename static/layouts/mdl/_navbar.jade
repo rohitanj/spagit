@@ -1,0 +1,54 @@
+mixin nav(name, id, style, data)
+  - var style = (typeof style === 'undefined') ? "default" : style
+  nav(id=id, class=["navbar", "navbar-" + style])&attributes(attributes)= data
+    .navbar__topline
+      .navbar-header.container
+        a#trigger.menu-trigger.visible-xs(href='#' role='button')
+          span.menu-trigger__elem
+        a(href="index.html").navbar-brand
+          img.logo.svg.img-responsive(src=path + 'images/' +name + '.svg', alt="Welcome to Gossip Spa Boutique")
+
+        ul.social-list.pull-right.hidden-xs
+          li
+            a(href="#").fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.icon.fa.fa-instagram.fa-stack-1x.fa-inverse
+          li
+            a(href="#").fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.icon.fa.fa-facebook.fa-stack-1x.fa-inverse
+          li
+            a(href="#").fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x
+              i.icon.fa.fa-twitter.fa-stack-1x.fa-inverse
+
+    .navbar__menu
+      .container
+        block
+
+mixin nav_item(href, active)
+  li(class=active): a( href=href )
+    block
+
+mixin nav_item_dropdown(href, active)
+  li(class=["dropdown", active])
+    a.dropdown-toggle( href=href, data-toggle="dropdown", role="button", aria-expanded="false" )= attributes.label
+      span.caret
+    ul.dropdown-menu( role="menu" )
+      block
+
+mixin nav_divider
+  li.divider
+
+mixin nav_header
+  li.dropdown-header
+    block
+
+mixin nav-links()
+  +nav_item('index.html', 'active') Home
+  +nav_item('about.html') About us
+  +nav_item('services.html') Services
+  +nav_item('news.html') News
+  +nav_item('blog.html') Blog
+  +nav_item('pages.html') Pages
+  +nav_item('contact.html') Contact Us

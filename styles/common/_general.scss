@@ -1,0 +1,129 @@
+/*************************************
+
+    GENERAL
+
+*************************************/
+
+html {
+  font-size: 10px;
+  color: #222;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+
+  @include media('<xs') {
+    font-size: 1.56rem;
+  }
+
+  @include media('>lg') {
+    font-size: 1.8rem;
+  }
+}
+
+main.page-content {
+  position: relative;
+  background-color: #fff;
+  z-index: 1;
+}
+
+// * These selection rule sets have to be separate.
+// * Customize the background color to match your design.
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+.form-control::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.form-control:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.form-control::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+
+button {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+// Remove default fieldset styles.
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+// Allow only vertical resizing of textareas.
+textarea {
+  resize: vertical;
+}
+
+
+img, svg, .svg {
+  vertical-align: middle;
+}
+
+a {
+  display: inline-block;
+  font-size: 14px;
+  color: $link-color;
+  font-family: 'Lato', sans-serif;
+  text-decoration: none;
+}
+
+// Settings list
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+// page-header reset;
+.page-header {
+  padding-bottom: 0;
+  margin: 0;
+  border-bottom: none;
+}
+
+label, .label-control {
+  display: block;
+  margin-bottom: 10px;
+  font-family: lato, sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+  color: $label-color;
+}
+
+.form-control {
+  &:focus {
+    box-shadow: 0 0 0 transparent;
+    border-color: $gray-base;
+  }
+}

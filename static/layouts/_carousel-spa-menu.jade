@@ -1,0 +1,191 @@
+//           = carousel spa-menu           /
+section.spa-menu.st-row
+  .container
+    header.hr-heading.rotate
+      h1 Spa menu
+      small Discover your inner self
+
+    //           ¬ carousel           /
+    #spaMenuCarousel.st-row__inner.spa-menu__row.owl-carousel.owl-theme
+      //           ¬ category packages           /
+      section.spa-menu__content(data-dot='packages')
+        h2 Packages
+        .row
+          .col-xs-12.col-md-6
+            each category in packages.items_1
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+          .col-xs-12.col-md-6
+            each category in packages.items_2
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+            .spa-banner
+              .flag.flag--top-right
+                span smart deal
+              figure.spa-banner__img.rounder-right
+                img.owl-lazy.img-responsive(src="#" data-src=path + 'images/upload/spa-menu/banner_1.jpg', alt="Packages")
+              ul.spa-banner__bottom.cf
+                li.pull-left
+                  span.spa-banner__title Packages
+                li.pull-right
+                  span.disabled $220
+                  span.spa-banner__sale $180
+
+
+      //           ¬ category massages           /
+      section.spa-menu__content(data-dot='massages')
+        h2 Signature massage experience
+        .row
+          .col-xs-12.col-md-6
+            each category in massages.items_1
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+          .col-xs-12.col-md-6
+            each category in massages.items_2
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+            .spa-banner
+              .flag.flag--top-right smart deal
+              figure.spa-banner__img.rounder-right.rounder-right
+                img.owl-lazy.img-responsive(src="#" data-src=path + 'images/upload/spa-menu/banner_2.jpg', alt="Couples Massage")
+              ul.spa-banner__bottom.cf
+                li.pull-left
+                  span.spa-banner__title Couples Massage
+                li.pull-right
+                  span.disabled $320
+                  span.spa-banner__sale $220
+
+
+      //           ¬ category aromatherapy           /
+      section.spa-menu__content(data-dot='aromatherapy')
+        h2 Aromatherapy
+        .row
+          .col-xs-12.col-md-6
+            each category in aromatherapy.items_1
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+          .col-xs-12.col-md-6
+            each category in aromatherapy.items_2
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+            .spa-banner
+              .flag.flag--top-right
+                span smart deal
+              figure.spa-banner__img.rounder-right
+                img.owl-lazy.img-responsive(src="#" data-src=path + 'images/upload/spa-menu/banner_3.jpg', alt="Aromatherapy")
+              ul.spa-banner__bottom.cf
+                li.pull-left
+                  span.spa-banner__title Aromatherapy
+                li.pull-right
+                  span.disabled $250
+                  span.spa-banner__sale $199
+
+
+      //           ¬ category make           /
+      section.spa-menu__content(data-dot='make')
+        h2 Make
+        .row
+          .col-xs-12.col-md-6
+            each category in make.items_1
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+          .col-xs-12.col-md-6
+            each category in make.items_2
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+            .spa-banner
+              .flag.flag--top-right
+                span smart deal
+              figure.spa-banner__img.rounder-right
+                img.owl-lazy.img-responsive(src="#" data-src=path + 'images/upload/spa-menu/banner_4.jpg', alt="Make")
+              ul.spa-banner__bottom.cf
+                li.pull-left
+                  span.spa-banner__title Make
+                li.pull-right
+                  span.disabled $200
+                  span.spa-banner__sale $160
+
+
+      //           ¬ category bridal           /
+      section.spa-menu__content(data-dot='bridal')
+        h2 Bridal
+        .row
+          .col-xs-12.col-md-6
+            each category in bridal.items_1
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+          .col-xs-12.col-md-6
+            each category in bridal.items_2
+              .spa-menu__item.cf
+                .spa-menu__heading.cf
+                  h3.spa-menu__title.pull-left=category.title
+                  span.spa-menu__cost.pull-right=category.cost
+                figure.spa-menu__thumb
+                  img.img-responsive(src='images/upload/#{category.img}', alt="")
+                p=category.preview
+            .spa-banner
+              .flag.flag--top-right
+                span smart deal
+              figure.spa-banner__img.rounder-right
+                img.owl-lazy.img-responsive(src="#" data-src=path + 'images/upload/spa-menu/banner_5.jpg', alt="Bridal")
+              ul.spa-banner__bottom.cf
+                li.pull-left
+                  span.spa-banner__title Bridal
+                li.pull-right
+                  span.disabled $250
+                  span.spa-banner__sale $210
+    //           end carousel           /
+
+
+    //           ¬ control tabs           /
+    .control-panel
+      button.control-panel__nav.prev: i.fa.fa-angle-left
+      button.control-panel__nav.next: i.fa.fa-angle-right
+      #controlTabs.control-panel__tabs
+    //           end control tabs           /
+//           end carousel spa-menu           /

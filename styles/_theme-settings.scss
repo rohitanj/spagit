@@ -1,0 +1,57 @@
+/*************************************
+
+    [TABLE OF CONTENTS]
+
+    1.General settings:
+
+      1.1 GENERAL
+      1.2 TYPOGRAPHY
+      1.3 CUSTOM GRID
+
+    2.Pages, layouts:
+
+      1.1 CUSTOM NAVBAR
+      1.2 SECTION SETTINGS
+      1.3 INTRO PAGES
+      1.4 HOME PAGEs
+      1.5 BLOG LIST, BLOG SINGLE POST
+      1.6 SIDEBAR
+      1.7 PAGE SERVICES, PAGE SERVICES-2
+      1.8 GALLERIES
+      1.9 ROOMs
+      1.10 ROOM DETAILS
+      1.11 ABOUT PAGE
+      1.12 PAGE FOOTER
+
+    3.Components & modifiers:
+
+      1.1 Breadcrumbs for inner pages
+      1.2 Custom buttons
+      1.3 Transitions, animations, states
+      1.4 Decorative elements
+      1.5 Datepicker for Bootstrap
+      1.6 CUSTOM FORM
+      1.7 Contact elements
+      1.8 Control carousel, pagination, tabs, video, lighbox
+      1.9 SECTION PANELS
+      1.10 Mobile menu Slideout.js
+
+    Universal styles
+
+*************************************/
+
+
+// root path
+$folder-path: './';
+
+// Fonts
+$fa-font-path: $folder-path + "fonts/" !default;
+
+// Backgrounds
+$bg-path: $folder-path + 'images/';
+
+// Sprites
+@mixin sprite-image($sprite) {
+  background-image: url(#{$sprite-image});
+}
+$sprite-image: $folder-path + "images/sprite.png";

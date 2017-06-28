@@ -1,0 +1,439 @@
+/*************************************
+
+    PAGE SERVICES, PAGE SERVICES-2
+      = services-menu
+
+    SERVICES
+      = slides
+        ¬ services-slide
+        ¬ __helper
+
+      = pricing
+      = pricing-panel
+
+    SERVICES-2
+      = services-panels
+      = sv-info-panel
+
+*************************************/
+
+.page-services main {
+  margin-bottom: 80px;
+}
+
+.page-services-2 .st-row {
+  padding-bottom: 80/18 + em;
+}
+
+.services-slides .st-row {
+  padding: 0;
+}
+
+
+/**        = services-slide         **/
+.services-slide {
+  overflow: hidden;
+  cursor: pointer;
+
+
+  &__title {
+    margin: 173px 0;
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+
+    &:before {
+      content: ' ';
+      display: block;
+      font-size: 9/18 + em;
+      height: 1em;
+      width: 1em;
+      margin: 0 auto 25/9 + em;
+      background-color: $brand-warning;
+      transform: rotate(-45deg);
+    }
+  }
+
+  &__helper {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    width: 100%;
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    transform: translateY(0);
+    z-index: 2;
+    @include transition--all();
+
+    p {
+      text-align: left;
+    }
+  }
+
+  .over {
+    @include transition--all();
+  }
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(#fff, .6);
+    z-index: 1;
+    @include transition--all();
+  }
+
+  &:hover {
+    .services-slide__title {
+      opacity: 0;
+    }
+
+    .services-slide__helper {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      top: 0;
+    }
+
+    .over {
+      background-color: rgba(#000, 0);
+    }
+  }
+}
+
+.pricing {
+  padding-bottom: 20/18 + em;
+
+  @include media('<lg') {
+    text-align: center;
+  }
+}
+
+/**        = pricing-panel         **/
+.pricing-panel {
+  position: relative;
+  border: 1px solid $hr-border;
+  background-color: $bg-lighter;
+  padding: 42px 30px 138px;
+  margin-bottom: 30/18 + em;
+  border-radius: 2px;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &__heading {
+    margin-bottom: 9px;
+  }
+
+  &__heading-rw {
+
+    span {
+      display: inline-block;
+    }
+    .cost {
+      @extend %text-brand-lg;
+      letter-spacing: normal;
+      margin-right: 10px;
+    }
+    .disabled {
+      @extend %text-brand;
+      color: $gray-light;
+      letter-spacing: normal;
+    }
+  }
+
+
+  &__main {
+
+    li {
+      padding: 13/18 + em 0;
+      line-height: 30/18 + em;
+
+      &:nth-last-of-type(n+2) {
+        border-bottom: 1px solid #e9e9e9;
+      }
+
+      span {
+        @extend %text-brand-xs;
+        display: block;
+      }
+    }
+  }
+
+  &__footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 34px 30px 50px;
+  }
+
+  .flag {
+    top: -1px;
+    right: -1px;
+  }
+
+
+  &--hero {
+    background-color: $gray-dark;
+    border-color: $gray-dark;
+    color: #fff;
+
+    h2 {
+      color: #fff;
+    }
+
+    ul > li:nth-last-of-type(n+2) {
+      border-bottom: 1px solid #676767;
+    }
+  }
+
+  @include media('<sm') {
+    text-align: center;
+
+    &__footer {
+      .btn {
+        width: 100%;
+      }
+    }
+  }
+}
+
+
+/**        = services-menu         **/
+.services-menu {
+
+  &__inner {
+    border: 1px solid $hr-border;
+    background-color: #fff;
+    padding: 42px 30px 24px;
+    border-radius: 2px;
+  }
+
+  &__item {
+    margin-bottom: 18px;
+  }
+
+  &__list {
+    display: table;
+    width: 100%;
+
+    li {
+      display: table-row;
+    }
+
+    li span {
+      display: table-cell;
+    }
+
+    li span:last-child {
+      text-align: right;
+      @extend %text-brand-xs;
+    }
+  }
+
+  @include media ('<xs') {
+    text-align: center;
+
+    &__list {
+      display: block;
+
+      li {
+        margin-bottom: 18px;
+      }
+
+      li,
+      li span {
+        display: block;
+      }
+
+      li span:last-child {
+        text-align: center;
+      }
+    }
+  }
+}
+
+/**        = PAGE SERVICES-2          **/
+.services-panels {
+  overflow: hidden;
+
+  .row {
+
+    > [class^=col] {
+      height: 400px;
+      padding: 0;
+
+      > * {
+        height: 100%;
+      }
+    }
+  }
+
+  .img-wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 960px;
+    overflow: hidden;
+
+    img {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &.right {
+      right: auto;
+    }
+  }
+
+
+  @include media('<lg') {
+    .img-wrap {
+      left: 50%;
+      right: auto;
+      margin-left: -480px;
+    }
+  }
+
+  @include media('<md') {
+    font-size: 17/18 + em;
+
+    .row {
+      > [class^=col] {
+        height: 450px;
+      }
+    }
+  }
+
+  @include media('<sm') {
+    padding-bottom: 0;
+    font-size: 1em;
+
+    .pull-right {
+      float: none !important;
+    }
+
+    .row {
+      > [class^=col] {
+        height: auto;
+      }
+    }
+
+    .img-wrap {
+      position: static;
+      width: auto;
+      height: 100%;
+      margin-left: 0;
+
+      img {
+        position: static;
+        transform: translateY(0);
+        @include img-responsive();
+      }
+    }
+  }
+}
+
+.sv-info-panel {
+  position: relative;
+  padding: 80/18 + em 15px 0 50px;
+  background-color: $bg-lighter;
+
+  &__heading {
+    @include clearfix();
+    line-height: 1;
+    margin-bottom: 30/18 + em;
+
+    > * {
+      float: left;
+      line-height: 1;
+      margin: 0;
+    }
+  }
+
+  .cost {
+    @extend %text-brand-xs;
+    float: right;
+    line-height: 36/14 + em;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+
+  &:after {
+    top: 0;
+    height: 100%;
+    width: 3000px;
+    left: 100%;
+    background-color: $bg-lighter;
+  }
+
+
+  &:before {
+    left: -30px;
+    top: 50%;
+    margin-top: -30px;
+    @include triangle(left, $bg-lighter, 3rem, 6rem);
+  }
+
+
+  &--left {
+    background-color: #fff;
+    padding: 80/18 + em 50px 0 15px;
+
+    &:before {
+      left: auto;
+      right: -30px;
+      @include triangle(right, #fff, 3rem, 6rem);
+    }
+
+    &:after {
+      left: -3000px; /* white */
+      background-color: #fff;
+    }
+  }
+
+
+  @include media('<md') {
+    &__heading > * {
+      float: none;
+    }
+
+    .cost {
+      float: none;
+    }
+  }
+
+  @include media('<sm') {
+    padding: 80/18 + em 15px 67/18 + em;
+
+    &:before {
+      left: 50%;
+      right: auto;
+      top: -30px;
+      margin-top: 0;
+      margin-left: -3rem;
+      @include triangle(up, $bg-lighter, 6rem, 3rem);
+    }
+
+    &--left {
+      &:before {
+        @include triangle(up, #fff, 6rem, 3rem);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+mixin bootstrap_breadcrumb(...breadcrumbdata)
+  //           = breadcrumbs           /
+  #breadcrumbs.breadcrumbs-wrapper(itemscope='', itemtype='http://data-vocabulary.org/Breadcrumb')
+    .container
+      ol.breadcrumb
+          if breadcrumbdata.length == 1 && Object.prototype.toString.call(breadcrumbdata) === '[object Array]'
+              each data, index in breadcrumbdata[0]
+                  if index == breadcrumbdata[0].length-1
+                      li.active: span #{data[0]}
+                  else
+                      li: a(href=data[1]) #{data[0]}
+          else
+              each data, index in breadcrumbdata
+                  if index == breadcrumbdata.length-1
+                      li.active: span #{data[0]}
+                  else
+                      li: a(href=data[1]) #{data[0]}
+
+  //           end breadcrumbs           /

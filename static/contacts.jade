@@ -1,0 +1,48 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Contacts';
+  - var pageId = 'contacts';
+  - var pageClass = ['page-inner', 'page-contacts'];
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content.main-contacts
+    //           = intro-contacts           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Contacts
+    //           end intro-contacts           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Contacts", "/contacts.html"])
+
+
+    //           = contacts content           /
+    .container
+      .row
+        //         ¬ contacts-list         *
+        .col-sm-5.col-md-4.col-lg-3
+          include layouts/_contacts
+        //         end contacts-list         /
+
+
+        //           ¬ google map contain           /
+        .full-wd.col-sm-7.col-md-8.col-lg-9
+          #map
+        //           end google map contain           /
+    //           end contacts content           /
+
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation
+
+  // Google map init
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD3gFKhVywUkygSxQEBdGVrI5-ZRrdjueA')
+  script(src='js/google-map.js')

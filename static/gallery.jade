@@ -1,0 +1,278 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Gallery';
+  - var pageId = 'gallery';
+  - var pageClass = ['page-inner', 'page-gallery'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = section-intro           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Gallery
+    //           end section-intro           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Gallery", "/gallery.html"])
+
+
+    //           = gallery           /
+    #gallerySection.gallery.gallery--room
+      .container
+        //           ¬ gallery-filter           /
+        ul.gallery-filter.filter-button-group
+          li.gallery-filter__item
+            button(data-filter='.is-hall') Hall
+          li.gallery-filter__item
+            button(data-filter='.is-rooms') Rooms
+          li.gallery-filter__item
+            button(data-filter='.is-spa') Spa salon
+          li.gallery-filter__item
+            button(data-filter='.is-pool') Pool
+          li.gallery-filter__item
+            button(data-filter='.is-beach') Beach
+        //           end gallery-filter           /
+
+
+        //           ¬ gallery-content           /
+        .row
+          #grid-gallery.gallery__row
+            // grid-sizer for regular culumns
+            .col-rs.col-xs-3.col-sm-4.col-md-3.grid-sizer
+
+            //         ¬gallery-item-hall         *
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_1.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_2.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_3.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_4.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_5.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_6.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_7.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-hall
+             a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_8.jpg', alt="")
+                .overlay
+            //         end gallery-item-hall         /
+
+
+            //         ¬gallery-item-rooms         *
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_1.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_2.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_3.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_4.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_5.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_6.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_7.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-rooms
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_8.jpg', alt="")
+                .overlay
+            //         end gallery-item-rooms         /
+
+
+            //         ¬galley-item-spa         *
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_1.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_2.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_3.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_4.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_5.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_6.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_7.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_8.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_9.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_10.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_11.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_12.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_13.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_14.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_15.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-spa
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_16.jpg', alt="")
+                .overlay
+            //         end galley-item-spa         /
+
+
+            //         ¬gallery-item-pool         *
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_1.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_2.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_3.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_4.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_5.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_6.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_7.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_8.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-pool
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_9.jpg', alt="")
+                .overlay
+
+
+            //         end gallery-item-pool         /
+            //         ¬gallery-item-beach         *
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_1.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_2.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_3.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_4.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_5.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_6.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_7.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_8.jpg', alt="")
+                .overlay
+            .col-rs.col-xs-6.col-sm-4.col-md-3.gallery__item.is-beach
+              a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+                img.img-responsive(src=path + 'images/upload/gallery-1/item_9.jpg', alt="")
+                .overlay
+            //         end gallery-item-beach         /
+        //           end gallery-content           /
+    //           end gallery           /
+
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation
+  include layouts/_lightbox

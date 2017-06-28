@@ -1,0 +1,162 @@
+/*************************************
+
+    ABOUT PAGE
+
+    = about-story
+      ¬ slide
+      ¬ img
+      ¬ name
+      ¬ stat
+    ¬ panel-board
+    ¬ triangle
+
+    =about-team
+
+*************************************/
+
+.about-story {
+  .triangle {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -30px;
+    @include triangle(left, $gray-dark, 3rem, 6rem);
+  }
+
+  &__slide {
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(#000, .7);
+    }
+  }
+
+  &__img {
+    position: absolute;
+    right: 130px;
+    bottom: 0;
+  }
+
+  &__name {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+    color: #fff;
+
+    small {
+      @extend %text-brand-xs;
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  @include media('<lg') {
+    &__img {
+      right: 50px;
+      z-index: 1;
+      left: 0;
+    }
+
+    &__name {
+      z-index: 2;
+    }
+  }
+
+
+  @include media('<sm') {
+    .panel-wd {
+      position: absolute;
+    }
+
+    .triangle {
+      position: absolute;
+      top: 30px;
+      @include triangle(up-right, $gray-dark, 8rem, 16rem);
+    }
+
+    &__name {
+      position: static;
+    }
+
+    &__img {
+      right: auto;
+      left: 5%;
+    }
+  }
+}
+
+.about-story .panel-board {
+  color: #fff;
+
+  h1, .h1 {
+    color: #fff;
+  }
+
+  &__bottom {
+    font-size: 1.67rem;
+
+    [class^=col] {
+      margin-bottom: 30/17 + em;
+    }
+  }
+
+  @include media('<lg') {
+    font-size: 1.63rem;
+
+    &__bottom {
+      font-size: 1.17rem;
+    }
+  }
+
+  @include media('<md') {
+    &__bottom {
+      font-size: 1.1rem;
+    }
+  }
+
+  @include media('<sm') {
+    padding: 0;
+    margin: 80/18 + em auto 65/18 + em;
+    max-width: 480px;
+  }
+}
+
+
+
+.about-team {
+  font-size: 1.8rem;
+  padding-bottom: 50/18 + em;
+
+  .col-rs {
+    margin-bottom: 30/18 + em;
+  }
+
+  &__img {
+    max-width: 260px;
+    margin: 0 auto 30/18 + em;
+
+    img {
+      border: 2px solid $brand-warning;
+      max-width: 260px;
+      width: 100%;
+    }
+  }
+
+
+  h3 {
+    line-height: 1;
+  }
+
+  &__type {
+    @extend %text-brand-xs;
+  }
+}

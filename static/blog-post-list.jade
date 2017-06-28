@@ -1,0 +1,48 @@
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Blog';
+  - var appleTitle = 'Gossip Boutique Spa | Blog';
+  - var pageId = 'blog';
+  - var pageClass = ['page-inner', 'page-blog'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = intro-blog           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Blog
+    //           end intro-blog           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Blog", "/blog-post-list.html"])
+
+
+    //           = blog-content wrapper           /
+    .blog-post__wrapper
+      .container
+        .row
+          //           = blog-post-list           /
+          .col-md-9
+            .blog-post-row
+              include layouts/_blog-post-list
+            .blog-post-navigation
+              include layouts/_pagination
+          //           end blog-post-list           /
+          //         = sidebar         *
+          .col-md-3
+            include layouts/_blog-sidebar
+          //         end  sidebar         /
+    //           end blog-content wrapper           /
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation

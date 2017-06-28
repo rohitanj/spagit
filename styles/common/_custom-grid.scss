@@ -1,0 +1,56 @@
+/*************************************
+
+    CUSTOM GRID
+
+    width < 768px
+    ¬ col-xs
+    ¬ item-sm
+    ¬ full-wd
+
+    width < 480px
+    ¬ col-rs - reset float, width 100%
+
+*************************************/
+
+/**        ¬ clearfix for fix float        **/
+.cf {
+  @include clearfix;
+}
+
+/**        width < 768px         **/
+@include media('<sm') {
+
+  /**         center column, max-width: 480px;        **/
+  .col-xs {
+    width: 100%;
+    max-width: 460px;
+    margin: 0 auto;
+  }
+
+  /**         gutter bottom: 30px        **/
+  .item-sm {
+    margin-bottom: 30px;
+  }
+
+  /**         gutter width reset        **/
+  .full-wd {
+    padding: 0;
+
+    .row {
+      padding: 0;
+
+      [class*=col] {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+@include media('<480px') {
+  /**         reset column         **/
+  .col-rs {
+    float: none;
+    width: 100%;
+  }
+}

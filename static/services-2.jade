@@ -1,0 +1,36 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Services';
+  - var appleTitle = 'Gossip Boutique Spa | Services';
+  - var pageId = 'services';
+  - var pageClass = ['page-inner', 'services', 'page-services-2'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = intro-services           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Services
+    //           end intro-services           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Services", "/services-2.html"])
+
+
+    include layouts/_services-2-panels
+    include layouts/_services-2-menu
+
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation

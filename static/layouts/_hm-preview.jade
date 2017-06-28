@@ -1,0 +1,18 @@
+//           = section video           /
+.section-video.st-row.st-row--gray.st-row--hr
+  .container.full-wd
+    .video-contain.rounder-right
+      //           * preview screen           /
+      .video-contain__preview(style="background-image: url('#{path + 'images/upload/intro/video_tour.jpg'}')")
+        .overlay.overlay--light
+        .flag.flag--top-right video tour
+
+      //           * iframe           /
+      #videoTourContain.video-contain__wrapper
+
+
+      //           * controls           /
+      .video-controls
+        button#videoTourPlay.btn-play(data-play)
+
+//           end section video           /

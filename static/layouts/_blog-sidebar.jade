@@ -1,0 +1,109 @@
+aside.blog-sidebar
+  section.blog-sidebar__subscribe
+    h4.blog-sidebar__title
+      | Subscription
+    p Be the first who will know about Gossip Spa Boutique special offers and discount promotions!
+    div.subscribe-form
+      form(action="./", method="POST")
+        div.form-group
+          span.label-control Your e-mail
+          input#field_mail.form-control(type="email", placeholder="" name='field_mail')
+        button.btn.btn--darker(type="submit") Subscribe
+
+
+  section.blog-sidebar__category
+    h4.blog-sidebar__title
+      | Categories
+    ul.categories-list
+      li
+        a(href="#")
+          span News
+          span.meta-count 21
+      li
+        a(href="#")
+          span reviews
+          span.meta-count 15
+      li
+        a(href="#")
+          span health
+          span.meta-count 12
+      li
+        a(href="#")
+          span sauna
+          span.meta-count 8
+      li
+        a(href="#")
+          span massage
+          span.meta-count 24
+      li
+        a(href="#")
+          span aromatherapy
+          span.meta-count 7
+
+  section.blog-sidebar__category
+    h4.blog-sidebar__title
+      | popular
+
+    ul.sidebar-preview
+      li
+        a.sidebar-preview__content(href="#")
+          figure
+            span.sidebar-thumb
+              img.img-responsive(src=path + 'images/upload/sidebar/recept_1.jpg', alt="New")
+            figcaption Take time to relax at these luxuripous Irish spas
+
+        .post-meta
+          a.date(href="#") 15 Jul 2016
+          a.comment(href="#")
+            i.fa.fa-comment
+            span.meta-count 12
+
+      li
+        a.sidebar-preview__content(href="#")
+          figure
+            span.sidebar-thumb
+              img.img-responsive(src=path + 'images/upload/sidebar/recept_2.jpg', alt="New")
+            figcaption A smart way to sample a classic Maine Resort
+
+        .post-meta
+          a.date(href="#") 06 Jul 2016
+          a.comment(href="#")
+            i.fa.fa-comment
+            span.meta-count 21
+
+      li
+        a.sidebar-preview__content(href="#")
+          figure
+            span.sidebar-thumb
+              img.img-responsive(src=path + 'images/upload/sidebar/recept_3.jpg', alt="New")
+            figcaption Enjoy special spa treatments discounts for month of July
+
+        .post-meta
+          a.date(href="#") 01 Jul 2016
+          a.comment(href="#")
+            i.fa.fa-comment
+            span.meta-count 35
+
+
+  section.blog-sidebar__category
+    h4.blog-sidebar__title
+      | Tags
+    ul.blog-tags.blog-tags--sidebar
+      li
+        a(href='#') luxury
+      li
+        a(href='#') spa
+      li
+        a(href='#') oil
+      li
+        a(href='#') service
+      li
+        a(href='#') treatment
+      li
+        a(href='#') Thai
+      li
+        a(href='#') scents
+      li
+        a(href='#') shiatsu
+      li
+        a(href='#') deal

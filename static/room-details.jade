@@ -1,0 +1,207 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Room-details';
+  - var pageId = 'roomDetails';
+  - var pageClass = ['page-inner', 'room-details'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = intro-room-details           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Rooms
+    //           end intro-room-details           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Room-details", "/room-details.html"])
+
+
+    //           = gallery           /
+    section#roomGallery.room-gallery
+      .container
+        header.room-gallery__heading
+          h1.room-gallery__title Executive Suite
+        .row.room-gallery__inner
+          //           ¬slides           /
+          .col-xs-12.col-sm-9.col-lg-10
+            .room-gallery__slides.swiper-container
+              .swiper-wrapper
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_1.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_2.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_3.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_4.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_5.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_6.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_7.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_8.jpg", alt="")
+
+
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_9.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_10.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_11.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_12.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_13.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_14.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_15.jpg", alt="")
+                .swiper-slide
+                  img.img-responsive(src=path + "images/upload/room-details/slide_16.jpg", alt="")
+          //           end slides           /
+
+
+          //           ¬ gallery track           /
+          .col-xs-12.col-sm-3.col-lg-2.room-gallery__track.swiper-container
+            .swiper-wrapper
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_1.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_2.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_3.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_4.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_5.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_6.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_7.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_8.jpg", alt="")
+
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_1.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_2.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_3.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_4.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_5.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_6.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_7.jpg", alt="")
+              .swiper-slide.gallery-item-link
+                img(src="images/upload/room-details/thumb_8.jpg", alt="")
+          //           end gallery track           /
+    //           end gallery           /
+    //           = service           /
+    section.room-service
+      .container
+        .row
+          .col-sm-6
+            h2.room-service__title Outstanding 5-star Service
+            p He as compliment unreserved projecting. Between had observe pretend delight for believe. Do newspaper questions consulted sweetness do. Our sportsman his unwilling fulfilled departure law. Now world own total saved above her cause table. Wicket myself her square remark the should far secure sex. Smiling cousins warrant law explain for whether.
+
+            .list-type
+              h3 Accomodation facilities
+              ul
+                li
+                  i.icon-bullet
+                  | Silent air conditioner
+                li
+                  i.icon-bullet
+                  | Billiard table (playballs are provided for rent)
+                li
+                  i.icon-bullet
+                  | Pool or garden view
+                li
+                  i.icon-bullet
+                  | 52″ cable TV
+                li
+                  i.icon-bullet
+                  | Living kit (with everyday replrenish)
+
+
+          .col-sm-6
+            .table-responsive
+              table.table.table-hover
+                thead
+                  tr
+                    th Price per night
+                    th Max # people
+                    th Meal plan
+                tbody
+                  tr
+                    td.price $990
+                    td.max-people
+                      i.fa.fa-user
+                    td.meal
+                      a.meal__tooltip(href="#" data-toggle="tooltip" data-placement="left" title="Meal plan demo  Lorem ipsum dolor sit amet, consectetur adipisicing.")
+                        | BB
+                        sup (?)
+                      .tooltip.left.in.fade
+                  tr
+                    td.price $1190
+                    td.max-people
+                      i.fa.fa-user
+                      i.fa.fa-user
+                    td.meal
+                      a.meal__tooltip(href="#" data-toggle="tooltip" data-placement="left" title="Meal plan demo  Lorem ipsum dolor sit amet, consectetur adipisicing.")
+                        | BB
+                        sup (?)
+                  tr
+                    td.price $1390
+                    td.max-people
+                      i.fa.fa-user
+                      i.fa.fa-user
+                    td.meal
+                      a.meal__tooltip(href="#" data-toggle="tooltip" data-placement="left" title="Meal plan demo")
+                        | HB
+                        sup (?)
+                  tr
+                    td.price $1590
+                    td.max-people
+                      i.fa.fa-user
+                      i.fa.fa-user
+                      i.fa.fa-user
+                    td.meal
+                      a.meal__tooltip(href="#" data-toggle="tooltip" data-placement="left" title="Meal plan demo.")
+                        | FB
+                        sup (?)
+                  tr
+                    td.price $1790
+                    td.max-people
+                      i.fa.fa-user
+                      i.fa.fa-user
+                    td.meal
+                      a.meal__tooltip(href="#" data-toggle="tooltip" data-placement="left" title="Meal plan demo  Lorem ipsum dolor sit amet, consectetur adipisicing  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, atque..")
+                        | AI
+                        sup (?)
+
+            .btn-wrap
+              button.btn.btn--darker(data-toggle="modal", data-target="#modal-inquiry") make reservation
+
+    //           end service           /
+
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation
+  include layouts/_lightbox

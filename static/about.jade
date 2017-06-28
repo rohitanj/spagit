@@ -1,0 +1,110 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | About';
+  - var pageId = 'about';
+  - var pageClass = ['page-inner', 'about'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = intro-about           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title About
+    //           end intro-about           /
+
+
+    //           = breadcrumbs           /
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["About", "/about.html"])
+    //           end breadcrumbs           /
+
+
+    //           = about-story           /
+    section.about-story
+      .panels-wrapper.panels-wrapper--dark
+        .container
+          .row
+            //           ¬ panel-wide           /
+            .col-xs-12.col-sm-6.about-story__slides.panel-wd.panel-wd--dark
+              .about-story__slide(style="background-image: url('#{path + 'images/upload/about/story_bg.jpg'}')")
+                  figure.about-story__img.hidden-xs
+                    img(src=path + 'images/upload/about/story_man.png', alt="")
+                  h3.about-story__name.pull-right.hidden-xs
+                    | Robert Anderson
+                    small Ceo
+                  .triangle.hidden-xs
+            //           end panel-wide           /
+
+            //           ¬ panel-board           /
+            .col-xs-12.col-sm-6.col-sm-push-6
+              article.panel-board.panel-board--right
+                header
+                  .h1.panel-board__title Our Short Story
+                  h3.about-story__name.visible-xs
+                    | Robert Anderson
+                    small Ceo
+
+                .panel-board__main
+                  p Certain but she but shyness why cottage. Gay the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose.
+
+                  p By impossible of in difficulty discovered celebrated ye. Justice joy manners boy met resolve produce. Bed head loud next plan rent had easy add him. As earnestly shameless elsewhere defective estimable fulfilled of. Esteem my advice it an excuse enable.
+
+                footer.panel-board__bottom.row.text-center
+                  .col-xs-12.col-sm-6
+                    .stat-num
+                      span.count 52
+                    span.stat-text people staff are working
+
+                  .col-xs-12.col-sm-6
+                    .stat-num
+                      span.count 192
+                    span.stat-text guests are staying  in hotel now
+            //           end panel-board           /
+
+    //           end about-story           /
+    //           = about-team           /
+    section#team.about-team.st-row
+      .container
+        header.hr-heading.rotate
+          h1 Team
+          small meet our staff
+
+        .about-team__inner
+          .row
+            .col-rs.col-xs-6.col-sm-3.text-center
+              .about-team__img
+                img.img-responsive.rounder(src=path + 'images/upload/about/team_1.jpg', alt="")
+              h3 Patricia Smith
+              span.about-team__type hostess
+
+            .col-rs.col-xs-6.col-sm-3.text-center
+              .about-team__img
+                img.img-responsive.rounder(src=path + 'images/upload/about/team_2.jpg', alt="")
+              h3 Susan Bell
+              span.about-team__type Administrator
+
+            .col-rs.col-xs-6.col-sm-3.text-center
+              .about-team__img
+                img.img-responsive.rounder(src=path + 'images/upload/about/team_3.jpg', alt="")
+              h3 Johnson Bavari
+              span.about-team__type fitness trainer
+
+            .col-rs.col-xs-6.col-sm-3.text-center
+              .about-team__img
+                img.img-responsive.rounder(src=path + 'images/upload/about/team_4.jpg', alt="")
+              h3 Oliva Simpson
+              span.about-team__type Waitress
+    //           end about-team           /
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation

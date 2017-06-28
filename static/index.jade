@@ -1,0 +1,40 @@
+//- Home page
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa';
+  - var pageId = 'rsHome';
+  - var pageClass = ['page-home'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    include layouts/_intro-home
+    include layouts/_hm-features
+    include layouts/_hm-about
+    include layouts/_carousel-spa-menu
+    include layouts/_hm-gallery
+    include layouts/_hm-stat
+    include layouts/_carousel-our-clients
+    include layouts/_hm-preview
+    include layouts/_reservation-form
+
+    //           ¬ map           /
+    #map
+    //           end map           /
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation
+  include layouts/_lightbox
+
+  // Google map init
+  script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD3gFKhVywUkygSxQEBdGVrI5-ZRrdjueA')
+  script(src='js/google-map.js')

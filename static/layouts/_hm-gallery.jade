@@ -1,0 +1,64 @@
+//           = gallery           /
+section#gallerySection.st-row.st-row--gray
+  .container
+    header.hr-heading.rotate
+      h1 Gallery
+      small relaxing & revitalizing atmosphere
+
+  .gallery
+    .container
+      .row
+        #grid-gallery.gallery__row
+          //           * grid-sizer for regular culumns           /
+          .grid-sizer.col-xs-3
+
+          //         ¬ home-gallery-items         *
+          .col-rs.col-xs-12.col-sm-6.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_1.jpg', alt="566x378")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_2.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_3.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_4.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_5.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_6.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_7.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-12.col-sm-6.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_8.jpg', alt="566x378")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_9.jpg', alt="")
+              .overlay
+          .col-rs.col-xs-6.col-sm-3.gallery__item
+            a.gallery__img-wrap.gallery-item-link(href="images/upload/full/image960x640.jpg")
+              img.img-responsive(src=path + 'images/upload/gallery-home/item_10.jpg', alt="")
+              .overlay
+          //         end home-gallery-items         /
+
+
+      //           * button load           /
+      div.btn-wrap
+        form(action="./", method="POST")
+          button.btn.btn--warn(type="submit") Load more
+
+//           end gallery           /

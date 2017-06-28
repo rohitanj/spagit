@@ -1,0 +1,139 @@
+//- Template inner
+extends _base
+
+block head
+  - var pageTitle = 'Gossip Boutique Spa | Rooms';
+  - var pageId = 'rooms';
+  - var pageClass = ['page-inner', 'rooms'];
+
+block icons
+  include ../images/symbols.svg
+
+block header
+  include layouts/_header
+
+block content
+  main#pageContent.page-content
+    //           = intro-rooms           /
+    section.intro-banner.intro-bg(style="background-image: url('#{path + 'images/upload/intro/inner_page.jpg'}')")
+      .intro-banner__inner
+        h1.title Rooms
+    //           end intro-rooms           /
+
+
+    +bootstrap_breadcrumb(["Gossip Spa Boutique", "/index.html"], ["Rooms", "/rooms.html"])
+
+
+    //           ¬ rooms-list           /
+    .rooms-list.st-row
+      .container
+        .row
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_1.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Executive Suite
+                .tr.pull-right
+                  span.room-banner__cost $990
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_2.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Presidental Suite
+                .tr.pull-right
+                  span.room-banner__cost $790
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_3.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Superior Room
+                .tr.pull-right
+                  span.room-banner__cost $590
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_4.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Deluxe Room
+                .tr.pull-right
+                  span.room-banner__cost $390
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_5.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Standard Room
+                .tr.pull-right
+                  span.room-banner__cost $250
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+
+          .col-xs-6.grid-item
+            .room-banner
+              figure.room-banner__img
+                img.img-responsive(src=path + 'images/upload/rooms/room_6.jpg', alt="Couples Massage")
+              .room-banner__footer
+                .tr.pull-left
+                  span.room-banner__title Studio Apartment
+                .tr.pull-right
+                  span.room-banner__cost $250
+              .room-banner__more
+                p Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence.
+                a.link-more(href="room-details.html")
+                  span Learn more
+                  i.fa.fa-angle-double-right
+    //           end rooms-list           /
+
+    //           ¬ rooms-program           /
+    section.room-hero.intro-bg(style="background-image: url('#{path + 'images/upload/intro/room_section_bg.jpg'}')")
+      .room-hero__inner.st-row.st-row--hr.over
+        .room-hero__main
+          span.room-hero__top Join our loyalty program
+          h1 Royal Milestones
+          p Enjoy our special benefits as a frequent guest. Pay less whenever you wish to stay in Gossip Spa Boutique or to use our services.
+          a(href="#").btn.btn--warn learn more
+    //           end rooms-program           /
+
+    include layouts/_reservation-form
+
+
+block footer
+  include layouts/_footer
+
+block bottom
+  include layouts/_popup-reservation

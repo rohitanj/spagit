@@ -1,0 +1,74 @@
+//           = Page Header fixed           /
+header.page-header
+  +nav("logo", "navbar", "default navbar-fixed")(data-offset-top='78', data-spy='affix')
+    ul.nav.navbar-nav.navbar-menu.hidden-xs
+      li
+        a(href='#')
+          span Home
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href='index.html') Home static
+          li
+            a(href='index-slider.html') Home slider
+          li
+            a(href="index-video.html") Home video
+          li
+            a(href="index-fixed-header.html") Home fixed header
+      li
+        a(href='#')
+          span Services
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href="services.html") Services-1
+          li
+            a(href="services-2.html") Services-2
+
+      li
+        a(href='#')
+          span Gallery
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href="gallery.html") Gallery-1
+          li
+            a(href="gallery-2.html") Gallery-2
+          li
+            a(href="gallery-3.html") Gallery-3
+      li
+        a(href='blog.html')
+          span Blog
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href='blog-post-list.html') Blog posts list
+          li
+            a(href='blog-single-post.html') Blog single post
+
+      li
+        a(href='contacts.html')
+          span Rooms
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href='rooms-list.html') Rooms list
+          li
+            a(href='room-details.html') Room details
+
+      li
+        a(href='#')
+          span Info
+          span.fa.fa-caret-down
+        ul.dropdown-menu
+          li
+            a(href="about.html") About
+          li
+            a(href="contacts.html") Contacts
+
+    ul.nav.navbar-nav.navbar__reservation
+      li
+        a.button.button--reservation(href='#' data-toggle="modal", data-target="#modal-inquiry")
+          i.fa.fa-bookmark-o
+          | Reservation
+//           end Page Header fixed           /

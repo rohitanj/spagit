@@ -1,0 +1,70 @@
+//           = reservation form           /
+section#reservation.st-row
+  .container
+    header.hr-heading.rotate
+      h1 Reservation
+      small book your unforgettable pleasure time
+
+    .row
+      //           ¬ form           /
+      .col-sm-6.col-md-5.col-md-offset-1.col-lg-4.col-lg-offset-2.item-sm
+        .form-wrap.form-res
+          form#formRes(action='/', method='POST')
+            .row
+              .col-md-12
+                .row.input-row
+                  .col-xs-12.input-wrap
+                    label.label-control(for="input_name") Your name #[span.label-warn *]
+                    input#input_name.form-control(type='text', name='field_name', placeholder='', required)
+                  .col-xs-12.input-wrap
+                    label.label-control(for="input_mail") Your e-mail #[span.label-warn *]
+                    input#input_mail.form-control(type='email', name='field_mail', placeholder='', required)
+
+              //           ¬ datepicker/clockpicker           /
+              .col-md-12
+                .row.input-row
+                  .col-rs.col-xs-6.input-wrap
+                    label.label-control(for='input_date') date
+                    input#input_date.form-control.datepicker(data-date-format="mm/dd/yyyy", required)
+                  .col-rs.col-xs-6.input-wrap.clockpicker
+                    label.label-control(for='input_time') time
+                    input#input_time.form-control(type='text', name='field_time', required)
+              //           end datepicker/clockpicker           /
+
+
+              //           ¬ number-of-reversed           /
+              .col-md-12
+                .label-control.noCursor # people
+                .row.input-row.number-of-reversed
+                  .col-rs.col-xs-6.input-wrap.fzReset
+                    select#reservMan
+                      option(value='1') 1
+                      option(value='2') 2
+                      option(value='3') 3
+                      option(value='4') 4
+                      option(value='5') 5
+                      option(value='6') 6
+                  .col-rs.col-xs-6.input-wrap
+                    input#checkReset(type="checkbox", value="")
+                    label(for='checkReset')
+                      i.fa.fa-check
+                      span.span I have more than 6 people in my party
+              //           end number-of-reversed           /
+
+
+              .col-md-12
+                .form-group
+                  .label-control.noCursor Special requests
+                  textarea.form-control(name='field_massage', placeholder='')
+
+            .btn-wrap
+              button.btn.btn--darker(type='submit') make reservation
+      //           end form           /
+
+
+      //           = contacts           /
+      .col-sm-6.col-md-5.col-lg-4
+        include _contacts
+      //           end contacts           /
+
+//           end reservation form           /

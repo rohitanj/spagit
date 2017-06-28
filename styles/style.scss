@@ -1,0 +1,52 @@
+// Dependencies
+@import "_vendor/_custom-bootstrap-variables.scss";
+@import "_vendor/bootstrap-sass-3.3.7/bootstrap/_mixins.scss";
+@import "utilities/mixins";
+@import "utilities/_function";
+@import "theme-settings";
+
+/*************************************
+
+    1.General settings:
+
+                                   */
+
+@import "common/general";
+@import "common/typography";
+@import "common/custom-grid";
+
+/*************************************
+
+    2.Pages, layouts:
+
+                                   */
+
+@import "layouts/header";       // import custom-navbar
+@import "layouts/section";
+@import "layouts/intro";
+@import "layouts/home-page";
+@import "layouts/blog";
+@import "layouts/sidebar";
+@import "layouts/services";
+@import "layouts/gallery";
+@import "layouts/rooms";
+@import "layouts/room-details";
+@import "layouts/about";
+@import "layouts/footer";
+
+/*************************************
+
+    3.Components & modifiers:
+
+                                   */
+
+@import "modules/breadcrumb";
+@import "modules/buttons";
+@import "modules/states";
+@import "modules/components";
+@import "modules/bootstrap-sass-datepicker";
+@import "modules/form";
+@import "modules/contacts";
+@import "modules/controls";
+@import "modules/panels";
+@import "modules/mobile-menu";

@@ -1,0 +1,25 @@
+include _buttons
+include _panels
+include _navbar
+include _table
+include _alert
+include _breadcrumb
+
+
+mixin bootswatch(theme)
+  link(href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/" + theme + "/bootstrap.min.css", rel="stylesheet")
+
+mixin fonts(name)
+  each arg, index in name
+    link(href='https://fonts.googleapis.com/css?family=#{arg}', rel='stylesheet', type='text/css')
+
+//- SVG icons
+mixin svg(symbol, w, h)
+  - var w = (typeof w === 'undefined') ? "100%" : w;
+  - var h = (typeof h === 'undefined') ? "100%" : h;
+
+  svg(width=w, height=h)
+    use(xlink:href='#' + symbol)
+
+//- +bootswatch('flatly')
+//- +svg('logo')

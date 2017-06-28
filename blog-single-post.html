@@ -1,0 +1,661 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="MobileOptimized" content="320">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Gossip Boutique Spa | Blog-post</title>
+    <!-- Disable tap highlight on IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest-->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Gossip Spa Boutique">
+
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Gossip Boutique Spa | Blog-post">
+
+    <!-- tile color for Win8-->
+    <meta name="msapplication-TileColor" content="#2F3BA2">
+
+    <!-- Color the status bar on mobile devices-->
+    <meta name="theme-color" content="#2F3BA2">
+
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700%7CLato:400,700" rel="stylesheet">
+
+    <!-- libs styles-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-clockpicker.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="css/animsition.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/jquery.mb.YTPlayer.min.css">
+    <!-- Icon pack-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pe-icon-7-stroke.css">
+    <!-- Core style-->
+    <link rel="stylesheet" href="style.css">
+
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/vendor/picturefill.min.js" async></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="blog" class="page-inner page-blog animsition">
+    <!--           * SVG Icon Pack           /-->    <svg style="display: none;">
+      <symbol id="humburger" viewBox="0 0 24 24" preserveAspectRatio="none">
+        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+      </symbol>
+      <symbol id="brand" viewBox="0 0 16 16" fill='#0f0'>
+        <path d="M7.998 16L1.07 11.998v-8L8 0l6.93 3.998L11 6.268 8 4.533 4.996 6.267v3.466l3.002 1.733 3-1.733 3.93 2.265L8 16z"/>
+      </symbol>
+    </svg>
+
+    <!--           = mobile menu           /-->
+    <div id="panelMenu" class="panel-menu">
+      <nav class="panel-menu-nav">
+        <header class="panel-menu-header">
+          <h1>Gossip Spa Boutique</h1>
+        </header>
+        <div class="panel-menu-content"><a href="#" data-menu="close" data-title="Menu" class="h4 panel-menu-heading"><span class="text">Menu</span><span class="icon-back pe-7s-angle-left-circle"></span></a>
+          <ul class="panel-list">
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Home</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Home" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="index.html">Home static</a></li>
+                <li><a href="index-slider.html">Home slider</a></li>
+                <li><a href="index-video.html">Home video</a></li>
+                <li><a href="index-fixed-header.html">Home fixed header</a></li>
+              </ul>
+            </li>
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Services</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Services" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="services.html">Services-1</a></li>
+                <li><a href="services-2.html">Services-2</a></li>
+              </ul>
+            </li>
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Gallery</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Gallery" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="gallery.html">Gallery-1</a></li>
+                <li><a href="gallery-2.html">Gallery-2</a></li>
+                <li><a href="gallery-3.html">Gallery-3</a></li>
+              </ul>
+            </li>
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Blog</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Blog" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="blog-post-list.html">Blog posts list</a></li>
+                <li><a href="blog-single-post.html">Blog single post</a></li>
+              </ul>
+            </li>
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Rooms</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Rooms" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="rooms-list.html">Rooms list</a></li>
+                <li><a href="room-details.html">Room details</a></li>
+              </ul>
+            </li>
+            <li class="panel-list-current"><a href="#" role="button" class="panel-list-item"><span>Info</span></a></li>
+            <li class="panel-list-level"><a href="#" role="button" data-title="Info" class="h4 panel-menu-heading menu-back"><span>back</span></a>
+              <ul class="panel-list">
+                <li><a href="about.html">About</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="panel-menu-footer">
+          <ul class="social-list">
+            <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-instagram fa-stack-1x fa-inverse"></i></a></li>
+            <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></a></li>
+            <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!--           end mobile menu           /-->
+    
+    <div id="overPage" class="over-page"></div>
+    <!--           = Page Header           /-->
+    <header id="panelHeader" class="page-header">
+      <nav id="navbar" class="navbar navbar-default">
+        <div class="navbar__topline">
+          <div class="navbar-header container"><a id="trigger" href="#" role="button" class="menu-trigger visible-xs"><span class="menu-trigger__elem"></span></a><a href="index.html" class="navbar-brand"><img src="images/logo.svg" alt="Welcome to Gossip Spa Boutique" class="logo svg img-responsive"/></a>
+            <ul class="social-list pull-right hidden-xs">
+              <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-instagram fa-stack-1x fa-inverse"></i></a></li>
+              <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-facebook fa-stack-1x fa-inverse"></i></a></li>
+              <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="navbar__menu">
+          <div class="container">
+            <ul class="nav navbar-nav navbar-menu hidden-xs">
+              <li><a href="#"><span>Home</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="index.html">Home static</a></li>
+                  <li><a href="index-slider.html">Home slider</a></li>
+                  <li><a href="index-video.html">Home video</a></li>
+                  <li><a href="index-fixed-header.html">Home fixed header</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Services</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="services.html">Services-1</a></li>
+                  <li><a href="services-2.html">Services-2</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Gallery</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="gallery.html">Gallery-1</a></li>
+                  <li><a href="gallery-2.html">Gallery-2</a></li>
+                  <li><a href="gallery-3.html">Gallery-3</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Blog</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="blog-post-list.html">Blog posts list</a></li>
+                  <li><a href="blog-single-post.html">Blog single post</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Rooms</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="rooms-list.html">Rooms list</a></li>
+                  <li><a href="room-details.html">Room details</a></li>
+                </ul>
+              </li>
+              <li><a href="#"><span>Info</span><span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar__reservation">
+              <li><a href="#" data-toggle="modal" data-target="#modal-inquiry" class="button button--reservation"><i class="fa fa-bookmark-o"></i>Reservation</a></li>
+            </ul>
+          </div>
+        </div></nav>
+    </header>
+    <!--           end Page Header           /-->
+
+
+    <!--           ¬ Content Aria           /-->
+    <main id="pageContent" class="page-content">
+      <!--           = section-intro           /-->
+      <section style="background-image: url('images/upload/intro/inner_page.jpg')" class="intro-banner intro-bg">
+        <div class="intro-banner__inner">
+          <h1 class="title">Blog</h1>
+        </div>
+      </section>
+      <!--           end section-intro           /-->
+      
+      <!--           = breadcrumbs           /-->
+      <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb" class="breadcrumbs-wrapper">
+        <div class="container">
+          <ol class="breadcrumb">
+            <li><a href="/index.html">Gossip Spa Boutique</a></li>
+            <li><a href="/blog-post-list.html">Blog</a></li>
+            <li class="active"><span>A premier luxury weight loss...</span></li>
+          </ol>
+        </div>
+      </div>
+      <!--           end breadcrumbs           /-->
+      <!--           = blog-post wrapper           /-->
+      <div class="blog-post__wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="blog-post-row">
+                <!--           ¬ post           /-->
+                <div class="blog-post blog-post-inner">
+                  <article class="main-post">
+                    <header>
+                      <h2>A premier luxury weight loss retreat and fitness bootcamp at Gossip Spa Boutique</h2>
+                    </header>
+                    <section class="main-post__content">
+                      <p>Certain but she but shyness why cottage. Gay the put instrument sir entreaties affronting. Pretended exquisite see cordially the you. Weeks quiet do vexed or whose. Motionless if no to affronting imprudence no precaution. My indulged as disposal strongly attended. Parlors men express had private village man. <a href="#" class="link">Discovery moonlight recommend all one not.</a> Indulged to answered prospect it bachelor is he bringing shutters. Pronounce forfeited mr direction oh he dashwoods ye unwilling.</p>
+                      <p>Difficulty on insensible reasonable in. From as went he they. Preference themselves me as thoroughly partiality considered on in estimating. Middletons acceptance discovered projecting so is so or. <strong>In or attachment inquietude remarkably comparison at an.</strong> Is surrounded prosperous stimulated am me discretion expression. But truth being state can she china widow. Occasional preference fat remarkably now projecting uncommonly dissimilar. Sentiments projection particular companions interested do at my delightful.</p>
+                      <div class="list-type"><span>Here goes some bullet list example:</span>
+                        <ul>
+                          <li>list bullet 1;</li>
+                          <li>list bullet 2;</li>
+                          <li>list bullet 3;</li>
+                          <li>list bullet 4;</li>
+                        </ul>
+                      </div>
+                      <p>In by an appetite no humoured returned informed. Possession so comparison inquietude he he conviction no decisively. Letter of on become he tended active enable to. Vicinity relation sensible sociable surprise screened no up as.</p>
+                      <blockquote>
+                        <p>Text (which is intended to be placed in a “blockquote” HTML5 tag) has also Georgia font but it’s just a little bit big bigger than a paragraph text and it has a cute italic style that represents an author’s direct speech.</p>
+                        <footer>
+                          <cite title="Source Title">John Doe, author of that phrase</cite>
+                        </footer>
+                      </blockquote>
+                      <p><a href="#" class="link">Terminated principles</a> sentiments of no pianoforte if projection impossible. Horses pulled nature favour number yet highly his has old. Contrasted literature 
+                        <mark>excellence he admiration impression insipidity so.</mark> Scale ought who terms after own quick since. Servants margaret husbands to screened in throwing. Imprudence oh an collecting partiality. Admiration gay difficulty unaffected how.
+                      </p>
+                      <h3>This is an awesome third level heading</h3>
+                      <p>Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is justice. Six draw you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages resolution son indulgence. Part sure on no long life am at ever. In songs above he as drawn to. Gay was outlived peculiar rendered led six.</p>
+                    </section>
+                    <div id="gallerySection" class="post-gallery">
+                      <div class="post-gallery__row cf"><a href="images/upload/full/image960x640.jpg" class="post-gallery__item gallery-item-link">
+                          <figure class="post-gallery__img-wrap"><img src="images/upload/gallery-blog/item_1.jpg" alt="">
+                            <div class="overlay"></div>
+                          </figure></a><a href="images/upload/full/image960x640.jpg" class="post-gallery__item gallery-item-link">
+                          <figure class="post-gallery__img-wrap"><img src="images/upload/gallery-blog/item_2.jpg" alt="">
+                            <div class="overlay"></div>
+                          </figure></a><a href="images/upload/full/image960x640.jpg" class="post-gallery__item gallery-item-link">
+                          <figure class="post-gallery__img-wrap"><img src="images/upload/gallery-blog/item_3.jpg" alt="">
+                            <div class="overlay"></div>
+                          </figure></a><a href="images/upload/full/image960x640.jpg" class="post-gallery__item gallery-item-link">
+                          <figure class="post-gallery__img-wrap"><img src="images/upload/gallery-blog/item_4.jpg" alt="">
+                            <div class="overlay"></div>
+                          </figure></a></div>
+                      <p class="post-gallery__figcaption">Gossip Spa Boutique exterior</p>
+                    </div>
+                    <div class="post-share cf">
+                      <p class="post-share__descr">Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic. Loud wish made on is am as hard. Court so avoid in plate hence.</p>
+                      <ul class="blog-post__meta cf">
+                        <li><span class="flag">jul 10, 2016</span></li>
+                        <li>
+                          <div class="post-meta"><span class="view"><i class="fa fa-heart"></i><span>356</span></span><span class="comment"><i class="fa fa-comment"></i><span>12</span></span></div>
+                        </li>
+                        <li><span class="author-post">by Jane Tailor</span></li>
+                      </ul>
+                      <ul class="social-list">
+                        <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-instagram fa-stack-1x fa-inverse"></i></a></li>
+                        <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-facebook fa-stack-1x fa-inverse"></i></a></li>
+                        <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-twitter fa-stack-1x fa-inverse"></i></a></li>
+                        <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-google-plus fa-stack-1x fa-inverse"></i></a></li>
+                        <li><a href="#" class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="icon fa fa-pinterest fa-stack-1x fa-inverse"></i></a></li>
+                      </ul>
+                    </div>
+                  </article>
+                </div>
+                <!--           end post           /-->
+                <!--           = other-posts           /-->
+                <div class="blog-post-other cf"><a href="blog-post.html#section_post" class="blog-post-other__more"><i class="fa fa-angle-left"></i>
+                    <p class="blog-post-other__descr">Enjoy our special Shiatsu massage promo deal!</p></a><a href="blog-post.html#section_post" class="blog-post-other__more">
+                    <p class="blog-post-other__descr">10 hair styling ideas for your unforgettable wedding</p><i class="fa fa-angle-right"></i></a></div>
+                <!--           end other-posts           /-->
+                <!--           ¬ comments           /-->
+                <div id="sectionComments" class="section-comments">
+                  <!--           ¬ comments wrapper           /-->
+                  <div class="section-comments__wrapper">
+                    <h2 class="section-title">6 comments</h2>
+                    <div class="post-comment cf">
+                      <div class="post-comment__col-l">
+                        <figure class="post-comment__avatar"><img src="images/upload/avatar_1.jpg" alt="" class="img-responsive"></figure>
+                      </div>
+                      <div class="post-comment__col-r">
+                        <article class="post-comment__content">
+                          <header class="post-comment__heading">
+                            <h3 class="post-comment__title">Olivia Danhem</h3>
+                            <time datetime="2016-05-06T12:52" class="post-comment__date">yesterday</time><a href="#" class="post-comment__reply"><i class="fa fa-reply"></i>Reply</a>
+                          </header>
+                          <div class="post-comment__text-wrap">
+                            <p>Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic.</p>
+                          </div>
+                          <div class="post-comment cf">
+                            <div class="post-comment__col-l2">
+                              <figure class="post-comment__avatar"><img src="images/upload/avatar_2.jpg" alt="" class="img-responsive"></figure>
+                            </div>
+                            <div class="post-comment__col-r2">
+                              <article class="post-comment__content">
+                                <header class="post-comment__heading">
+                                  <h3 class="post-comment__title">Paul</h3>
+                                  <time datetime="2016-05-07T15:02" class="post-comment__date">today @ 15:02</time><a href="#" class="post-comment__reply"><i class="fa fa-reply"></i>Reply</a>
+                                </header>
+                                <div class="post-comment__text-wrap">
+                                  <p>Dare he feet my tell busy. Considered imprudence.</p>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                          <div class="post-comment cf">
+                            <div class="post-comment__col-l2">
+                              <figure class="post-comment__avatar"><img src="images/upload/avatar_1.jpg" alt="" class="img-responsive"></figure>
+                            </div>
+                            <div class="post-comment__col-r2">
+                              <article class="post-comment__content">
+                                <header class="post-comment__heading">
+                                  <h3 class="post-comment__title">Olivia Danhem</h3>
+                                  <time datetime="2016-05-07T22:49" class="post-comment__date">today @ 22:49</time><a href="#" class="post-comment__reply"><i class="fa fa-reply"></i>Reply</a>
+                                </header>
+                                <div class="post-comment__text-wrap">
+                                  <p>Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic.</p>
+                                </div>
+                              </article>
+                            </div>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="post-comment cf">
+                      <div class="post-comment__col-l">
+                        <figure class="post-comment__avatar"><img src="images/upload/avatar_3.jpg" alt="" class="img-responsive"></figure>
+                      </div>
+                      <div class="post-comment__col-r">
+                        <article class="post-comment__content">
+                          <header class="post-comment__heading">
+                            <h3 class="post-comment__title">Alis D.</h3>
+                            <time datetime="2016-05-01T06:39" class="post-comment__date">5 days ago</time><a href="#" class="post-comment__reply"><i class="fa fa-reply"></i>Reply</a>
+                          </header>
+                          <div class="post-comment__text-wrap">
+                            <p>Provided so as doubtful on striking required. Waiting we to compass assured.</p>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                    <div class="post-comment cf">
+                      <div class="post-comment__col-l">
+                        <figure class="post-comment__avatar"><img src="images/upload/avatar_4.jpg" alt="" class="img-responsive"></figure>
+                      </div>
+                      <div class="post-comment__col-r">
+                        <article class="post-comment__content">
+                          <header class="post-comment__heading">
+                            <h3 class="post-comment__title">Amanda Henderson</h3>
+                            <time datetime="2016-05-01T06:39" class="post-comment__date">6 days ago</time><a href="#" class="post-comment__reply"><i class="fa fa-reply"></i>Reply</a>
+                          </header>
+                          <div class="post-comment__text-wrap">
+                            <p>Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.</p>
+                          </div>
+                        </article>
+                      </div>
+                    </div>
+                  </div>
+                  <!--           end comments wrapper           /-->
+                  
+                  <!--           = form           /-->
+                  <div class="section-comments__form form-wrap form-comments">
+                    <h2 class="section-title">Post a comment</h2>
+                    <form action="blog-singlepost.html" method="POST">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="row input-row">
+                            <div class="col-sm-6 input-wrap">
+                              <label for="commentName" class="label-control">Your name <span class="label-warn">*</span></label>
+                              <input id="commentName" type="text" name="field_name" placeholder="" required class="form-control">
+                            </div>
+                            <div class="col-sm-6 input-wrap">
+                              <label for="commentMail" class="label-control">Your e-mail <span class="label-warn">*</span></label>
+                              <input id="commentMail" type="email" name="field_mail" placeholder="" required class="form-control">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-12">
+                          <div class="form-group">
+                            <label for="commentMsg" class="label-control">your comment <span class="label-warn">*</span></label>
+                            <textarea id="commentMsg" name="field_massage" placeholder="" class="form-control"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn--darker btn--lg pull-right">post comment</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <!--           end form           /-->
+                  
+                  
+                </div>
+                <!--           end comments           /-->
+              </div>
+            </div>
+            <div class="col-md-3">
+              <aside class="blog-sidebar">
+                <section class="blog-sidebar__subscribe">
+                  <h4 class="blog-sidebar__title">Subscription</h4>
+                  <p>Be the first who will know about Gossip Spa Boutique special offers and discount promotions!</p>
+                  <div class="subscribe-form">
+                    <form action="./" method="POST">
+                      <div class="form-group"><span class="label-control">Your e-mail</span>
+                        <input id="field_mail" type="email" placeholder="" name="field_mail" class="form-control">
+                      </div>
+                      <button type="submit" class="btn btn--darker">Subscribe</button>
+                    </form>
+                  </div>
+                </section>
+                <section class="blog-sidebar__category">
+                  <h4 class="blog-sidebar__title">Categories</h4>
+                  <ul class="categories-list">
+                    <li><a href="#"><span>News</span><span class="meta-count">21</span></a></li>
+                    <li><a href="#"><span>reviews</span><span class="meta-count">15</span></a></li>
+                    <li><a href="#"><span>health</span><span class="meta-count">12</span></a></li>
+                    <li><a href="#"><span>sauna</span><span class="meta-count">8</span></a></li>
+                    <li><a href="#"><span>massage</span><span class="meta-count">24</span></a></li>
+                    <li><a href="#"><span>aromatherapy</span><span class="meta-count">7</span></a></li>
+                  </ul>
+                </section>
+                <section class="blog-sidebar__category">
+                  <h4 class="blog-sidebar__title">popular</h4>
+                  <ul class="sidebar-preview">
+                    <li><a href="#" class="sidebar-preview__content">
+                        <figure><span class="sidebar-thumb"><img src="images/upload/sidebar/recept_1.jpg" alt="New" class="img-responsive"></span>
+                          <figcaption>Take time to relax at these luxuripous Irish spas</figcaption>
+                        </figure></a>
+                      <div class="post-meta"><a href="#" class="date">15 Jul 2016</a><a href="#" class="comment"><i class="fa fa-comment"></i><span class="meta-count">12</span></a></div>
+                    </li>
+                    <li><a href="#" class="sidebar-preview__content">
+                        <figure><span class="sidebar-thumb"><img src="images/upload/sidebar/recept_2.jpg" alt="New" class="img-responsive"></span>
+                          <figcaption>A smart way to sample a classic Maine Resort</figcaption>
+                        </figure></a>
+                      <div class="post-meta"><a href="#" class="date">06 Jul 2016</a><a href="#" class="comment"><i class="fa fa-comment"></i><span class="meta-count">21</span></a></div>
+                    </li>
+                    <li><a href="#" class="sidebar-preview__content">
+                        <figure><span class="sidebar-thumb"><img src="images/upload/sidebar/recept_3.jpg" alt="New" class="img-responsive"></span>
+                          <figcaption>Enjoy special spa treatments discounts for month of July</figcaption>
+                        </figure></a>
+                      <div class="post-meta"><a href="#" class="date">01 Jul 2016</a><a href="#" class="comment"><i class="fa fa-comment"></i><span class="meta-count">35</span></a></div>
+                    </li>
+                  </ul>
+                </section>
+                <section class="blog-sidebar__category">
+                  <h4 class="blog-sidebar__title">Tags</h4>
+                  <ul class="blog-tags blog-tags--sidebar">
+                    <li><a href="#">luxury</a></li>
+                    <li><a href="#">spa</a></li>
+                    <li><a href="#">oil</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">treatment</a></li>
+                    <li><a href="#">Thai</a></li>
+                    <li><a href="#">scents</a></li>
+                    <li><a href="#">shiatsu</a></li>
+                    <li><a href="#">deal</a></li>
+                  </ul>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--           end blog-post wrapper           /-->
+    </main>
+    <!--           end Content Aria           /-->
+
+
+    <footer class="page-footer">
+      <div class="container">
+        <div class="row">
+          <!--           ¬ page-footer__contacts           /-->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <h4 class="page-footer__title">contacts</h4>
+            <ul class="page-footer__list">
+              <li><a href="tel:+610883414603" class="rs-number">+61 (08) 8341 4603</a></li>
+              <li><a href="mailto:royal-spa@example.com" class="rs-mail">royal-spa@example.com</a></li>
+              <li>“Gossip Spa Boutique”, 70 Gloucester avenue,<br>Hindmarsh SA 5007, Australia</li>
+            </ul>
+          </div>
+          <!--           end page-footer__contacts           /-->
+          
+          <!--           ¬ page-footer__instagram           /-->
+          <div class="col-sm-6 col-md-4 col-lg-3 page-footer__intstagram">
+            <h4 class="page-footer__title">instagram</h4>
+            <div class="instagram-top-list cf"><a href="#"><img src="images/upload/instagram_1.jpg" alt="" class="img-responsive"></a><a href="#"><img src="images/upload/instagram_2.jpg" alt="" class="img-responsive"></a><a href="#"><img src="images/upload/instagram_3.jpg" alt="" class="img-responsive"></a><a href="#"><img src="images/upload/instagram_4.jpg" alt="" class="img-responsive"></a><a href="#"><img src="images/upload/instagram_5.jpg" alt="" class="img-responsive"></a><a href="#"><img src="images/upload/instagram_6.jpg" alt="" class="img-responsive"></a></div>
+          </div>
+          <!--           end page-footer__instagram           /-->
+          
+          <!--           ¬ page-footer__twitter           /-->
+          <div class="col-sm-6 col-md-4 col-lg-3 page-footer__twitter">
+            <h4 class="page-footer__title">Twitter</h4>
+            <ul class="twitter-posts page-footer__list">
+              <li><i class="fa fa-twitter"></i>
+                <p>That is a twitter post sample. Make sure you are following us <a href="#" class="link">@NetGon</a></p><a href="#" class="date-twit">10 July 2016</a>
+              </li>
+              <li><i class="fa fa-twitter"></i>
+                <p>That is an another example of a twitter post.</p><a href="#" class="date-twit">09 July 2016</a>
+              </li>
+            </ul>
+          </div>
+          <!--           end page-footer__twitter           /-->
+          
+          <!--           ¬ page-footer__tags           /-->
+          <div class="col-sm-6 col-md-12 col-lg-3 page-footer__tags">
+            <h4 class="page-footer__title">Tags</h4>
+            <ul class="blog-tags cf blog-tags--footer">
+              <li><a href="#">luxury</a></li>
+              <li><a href="#">spa</a></li>
+              <li><a href="#">oil</a></li>
+              <li><a href="#">treatment</a></li>
+              <li><a href="#">therapy</a></li>
+              <li><a href="#">stones</a></li>
+              <li><a href="#">scents</a></li>
+            </ul>
+          </div>
+          <!--           end page-footer__tags           /-->
+          
+        </div>
+      </div>
+      <div class="page-footer__copyright">
+        <div class="container">© 2016 Gossip Spa Boutique — Luxury Hotel & Spa HTML5 Template.</div>
+      </div>
+    </footer>
+    <!--         = popup reservation form         *-->
+    <div id="modal-inquiry" class="modal fade">
+      <div class="modal-dialog">
+        <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="hr-heading">
+              <div class="h1">Reservation</div>
+            </div>
+          </div>
+          <div class="modal-body">
+            <div class="form-wrap form-res">
+              <form id="mdFormRes" action="/" method="POST">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="row input-row">
+                      <div class="col-xs-12 input-wrap">
+                        <label for="mdInputName" class="label-control">Your name <span class="label-warn">*</span></label>
+                        <input id="mdInputName" type="text" name="field_name" placeholder="" required class="form-control">
+                      </div>
+                      <div class="col-xs-12 input-wrap">
+                        <label for="mdInputMail" class="label-control">Your e-mail <span class="label-warn">*</span></label>
+                        <input id="mdInputMail" type="email" name="field_mail" placeholder="" required class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <!--         !datepicker/clockpicker         *-->
+                    <div class="row input-row">
+                      <div class="col-rs col-xs-6 input-wrap">
+                        <label for="mdInputDate" class="label-control">date</label>
+                        <input id="mdInputDate" data-date-format="mm/dd/yyyy" required class="form-control datepicker">
+                      </div>
+                      <div class="col-rs col-xs-6 input-wrap clockpicker">
+                        <label for="mdInputTime" class="label-control">time</label>
+                        <input id="mdInputTime" type="text" name="field_time" required class="form-control">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="label-control noCursor"># people</div>
+                    <div class="row input-row number-of-reversed">
+                      <div class="col-rs col-xs-6 input-wrap fzReset">
+                        <!--         .number-of-reversed         *-->
+                        <select id="mdReservMan">
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                        </select>
+                      </div>
+                      <div class="col-rs col-xs-6 input-wrap">
+                        <input id="mdCheckReset" type="checkbox" value="">
+                        <label for="mdCheckReset"><i class="fa fa-check"></i><span class="span">I have more than 6 people in my party</span></label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <div class="label-control noCursor">Special requests</div>
+                      <textarea name="field_massage" placeholder="" class="form-control"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="btn-wrap">
+                  <button type="submit" class="btn btn--darker">make reservation</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--         end  popup reservation form         /-->
+    <!--           = lightbox gallery           /-->
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls">
+      <div class="slides"></div><a href="#" class="prev"></a><a href="#" class="next"></a><a href="#" class="close"></a>
+    </div>
+    <!--           end lightbox gallery           /-->
+    <script src="js/vendor/jquery-2.2.3.min.js"></script>
+    <script src="js/vendor/rem.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/animsition.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-clockpicker.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.equalheights.min.js"></script>
+    <script src="js/jquery.barrating.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/swiper.jquery.min.js"></script>
+    <script src="js/blueimp-gallery.min.js"></script>
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jarallax-video.min.js"></script>
+    <script src="js/slideout.js"></script>
+    <!-- Core script-->
+    <script src="js/main.js"></script>
+
+    <!--           * Google Analytics           /-->
+  </body>
+</html>

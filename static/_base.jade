@@ -1,0 +1,82 @@
+include layouts/mdl/_mixins
+
+block config
+  include partials/_config
+
+block head
+
+//- Extends template page
+doctype html
+html(class="no-js" lang="en")
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='description', content='')
+    meta(name='MobileOptimized', content='320')
+    meta(name='HandheldFriendly', content='True')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, user-scalable=no')
+    title #{pageTitle}
+
+    // Disable tap highlight on IE
+    meta(name='msapplication-tap-highlight', content='no')
+    = pad
+
+    // Web Application Manifest
+    link(rel='manifest', href='manifest.json')
+    = pad
+
+    // Add to homescreen for Chrome on Android
+    meta(name='mobile-web-app-capable', content='yes')
+    meta(name='application-name', content=descrPage)
+    = pad
+
+    // Add to homescreen for Safari on iOS
+    meta(name='apple-mobile-web-app-capable', content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style', content='black')
+    meta(name='apple-mobile-web-app-title', content=appleTitle)
+    = pad
+
+    // tile color for Win8
+    meta(name='msapplication-TileColor', content=msappColor)
+    = pad
+
+    // Color the status bar on mobile devices
+    meta(name='theme-color', content=themeColor)
+    = pad
+
+    //- Extends for styles
+    block styles
+      include partials/_head
+    = pad
+
+    //- Extends for plugins js
+    block tools
+      include partials/_tools
+
+  body(id=pageId, class=pageClass).animsition
+    //           * SVG Icon Pack           /
+    block icons
+    //- mobile menu
+    include layouts/_mp-push-menu
+
+    block header
+    = padx2
+
+    //           ¬ Content Aria           /
+    block content
+    //           end Content Aria           /
+    = padx2
+
+    block footer
+
+    //- bottom page
+    block bottom
+
+    block scripts
+      include partials/_scripts
+      = pad
+
+    //           * Google Analytics           /
+    //- script.
+    //-   include plugins/_analytics.js
+

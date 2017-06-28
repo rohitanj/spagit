@@ -1,0 +1,113 @@
+//           ¬ comments           /
+#sectionComments.section-comments
+
+  //           ¬ comments wrapper           /
+  .section-comments__wrapper
+    h2.section-title 6 comments
+
+    .post-comment.cf
+      .post-comment__col-l
+        figure.post-comment__avatar
+          img.img-responsive(src=path + 'images/upload/avatar_1.jpg', alt='')
+      .post-comment__col-r
+        article.post-comment__content
+          header.post-comment__heading
+            h3.post-comment__title Olivia Danhem
+            time.post-comment__date(datetime='2016-05-06T12:52') yesterday
+            a.post-comment__reply(href='#')
+              i.fa.fa-reply
+              | Reply
+          .post-comment__text-wrap
+            p
+              | Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic.
+
+
+          .post-comment.cf
+            .post-comment__col-l2
+              figure.post-comment__avatar
+                img.img-responsive(src=path + 'images/upload/avatar_2.jpg', alt='')
+            .post-comment__col-r2
+              article.post-comment__content
+                header.post-comment__heading
+                  h3.post-comment__title Paul
+                  time.post-comment__date(datetime='2016-05-07T15:02') today @ 15:02
+                  a.post-comment__reply(href='#')
+                    i.fa.fa-reply
+                    | Reply
+                .post-comment__text-wrap
+                  p
+                    | Dare he feet my tell busy. Considered imprudence.
+
+          .post-comment.cf
+            .post-comment__col-l2
+              figure.post-comment__avatar
+                img.img-responsive(src=path + 'images/upload/avatar_1.jpg', alt='')
+            .post-comment__col-r2
+              article.post-comment__content
+                header.post-comment__heading
+                  h3.post-comment__title Olivia Danhem
+                  time.post-comment__date(datetime='2016-05-07T22:49') today @ 22:49
+                  a.post-comment__reply(href='#')
+                    i.fa.fa-reply
+                    | Reply
+                .post-comment__text-wrap
+                  p
+                    | Do in laughter securing smallest sensible no mr hastened. As perhaps proceed in in brandon of limited unknown greatly. Distrusts fulfilled happiness unwilling as explained of difficult. No landlord of peculiar ladyship attended if contempt ecstatic.
+
+    .post-comment.cf
+      .post-comment__col-l
+        figure.post-comment__avatar
+          img.img-responsive(src=path + 'images/upload/avatar_3.jpg', alt='')
+      .post-comment__col-r
+        article.post-comment__content
+          header.post-comment__heading
+            h3.post-comment__title Alis D.
+            time.post-comment__date(datetime='2016-05-01T06:39') 5 days ago
+            a.post-comment__reply(href='#')
+              i.fa.fa-reply
+              | Reply
+          .post-comment__text-wrap
+            p
+              | Provided so as doubtful on striking required. Waiting we to compass assured.
+
+    .post-comment.cf
+      .post-comment__col-l
+        figure.post-comment__avatar
+          img.img-responsive(src=path + 'images/upload/avatar_4.jpg', alt='')
+      .post-comment__col-r
+        article.post-comment__content
+          header.post-comment__heading
+            h3.post-comment__title Amanda Henderson
+            time.post-comment__date(datetime='2016-05-01T06:39') 6 days ago
+            a.post-comment__reply(href='#')
+              i.fa.fa-reply
+              | Reply
+          .post-comment__text-wrap
+            p
+              | Questions explained agreeable preferred strangers too him her son. Set put shyness offices his females him distant. Improve has message besides shy himself cheered however how son. Quick judge other leave ask first chief her. Indeed or remark always silent seemed narrow be. Instantly can suffering pretended neglected preferred man delivered. Perhaps fertile brandon do imagine to cordial cottage.
+  //           end comments wrapper           /
+
+
+  //           = form           /
+  .section-comments__form.form-wrap.form-comments
+    h2.section-title Post a comment
+    form(action='blog-singlepost.html', method='POST')
+      .row
+        .col-md-12
+          .row.input-row
+            .col-sm-6.input-wrap
+              label.label-control(for="commentName") Your name #[span.label-warn *]
+              input#commentName.form-control(type='text', name='field_name', placeholder='', required)
+            .col-sm-6.input-wrap
+              label.label-control(for="commentMail") Your e-mail #[span.label-warn *]
+              input#commentMail.form-control(type='email', name='field_mail', placeholder='', required)
+        .col-md-12
+          .form-group
+            label.label-control(for="commentMsg") your comment #[span.label-warn *]
+            textarea#commentMsg.form-control(name='field_massage', placeholder='')
+          button.btn.btn--darker.btn--lg.pull-right(type='submit') post comment
+  //           end form           /
+
+
+
+//           end comments           /

@@ -1,0 +1,229 @@
+{
+  "video": {
+    "home_video": {
+      "id": "3ET1wM5qUpM"
+    },
+    "our_tour": {
+      "id": "3ET1wM5qUpM"
+    },
+    "blog_post": {
+      "id_1": "3ET1wM5qUpM"
+    }
+  },
+
+  "packages": {
+    "items_1": [
+      {
+        "img": "spa-menu/item_prev_1.jpg",
+        "title": "Shiatsu",
+        "cost": "$130 / 30 min.",
+        "preview": "A form of physical therapy for the whole body.  Shiatsu techniques include massages with fingers, thumbs, feet and palms; assisted stretching; and joint manipulation and mobilization."
+      },
+      {
+        "img": "spa-menu/item_prev_2.jpg",
+        "title": "Swedish",
+        "cost": "$115 / 60 min.",
+        "preview": "The most widely recognized and commonly used category of massage is the Swedish massage. Swedish massage has shown to be helpful in reducing pain, joint stiffness, and improving function in patients with osteoarthritis of the knee over a period of eight weeks."
+      },
+      {
+        "img": "spa-menu/item_prev_4.jpg",
+        "title": "Anti-cellulite",
+        "cost": "$90 / 30 min.",
+        "preview": "Ideal to energise the skin and help break down cellulite with the antioxidant properties of Bellefontaine Vital Massage oil, a perfect blend of apricot, sweet orange and lemon essential oils."
+      },
+      {
+        "img": "spa-menu/item_prev_6.jpg",
+        "title": "Tantric",
+        "cost": "$140 / 60 min.",
+        "preview": "A massage technique popularized by the neotantra movement, and drawing on modern interpretations of tantra."
+      }
+    ],
+    "items_2": [
+      {
+        "img": "spa-menu/item_prev_3.jpg",
+        "title": "Thai",
+        "cost": "$140 / 80 min.",
+        "preview": "Generally speaking, givers of modern Thai massage operate on the hypothesis that the body is permeated with \"lom\", or \"air\", which is inhaled into the lungs and subsequently travels throughout the body along 72,000 pathways called \"sen\", which therapists manipulate manually."
+      },
+      {
+        "img": "spa-menu/item_prev_5.jpg",
+        "title": "Stone",
+        "cost": "$170 / 80 min.",
+        "preview": "A stone massage uses cold or water-heated stones to apply pressure and heat to the body. Stones coated in oil can also be used by the therapist delivering various massaging strokes. The hot stones used are commonly Basalt stones (or lava rocks) which over time have become extremely polished and smooth. As the stones are placed along the recipient's back, they help to retain heat which then deeply penetrates into the muscles."
+      }
+    ]
+  },
+
+  "massages": {
+    "items_1": [
+      {
+        "img": "spa-menu/item_prev_5.jpg",
+        "title": "Stone",
+        "cost": "$170 / 80 min.",
+        "preview": "A stone massage uses cold or water-heated stones to apply pressure and heat to the body. Stones coated in oil can also be used by the therapist delivering various massaging strokes. The hot stones used are commonly Basalt stones (or lava rocks) which over time have become extremely polished and smooth. As the stones are placed along the recipient's back, they help to retain heat which then deeply penetrates into the muscles."
+      },
+      {
+        "img": "spa-menu/item_prev_3.jpg",
+        "title": "Thai",
+        "cost": "$140 / 80 min.",
+        "preview": "Generally speaking, givers of modern Thai massage operate on the hypothesis that the body is permeated with \"lom\", or \"air\", which is inhaled into the lungs and subsequently travels throughout the body along 72,000 pathways called \"sen\", which therapists manipulate manually."
+      },
+      {
+        "img": "spa-menu/item_prev_4.jpg",
+        "title": "Anti-cellulite",
+        "cost": "$90 / 30 min.",
+        "preview": "Ideal to energise the skin and help break down cellulite with the antioxidant properties of Bellefontaine Vital Massage oil, a perfect blend of apricot, sweet orange and lemon essential oils."
+      },
+      {
+        "img": "spa-menu/item_prev_6.jpg",
+        "title": "Tantric",
+        "cost": "$140 / 60 min.",
+        "preview": "A massage technique popularized by the neotantra movement, and drawing on modern interpretations of tantra."
+      }
+    ],
+    "items_2": [
+      {
+        "img": "spa-menu/item_prev_1.jpg",
+        "title": "Shiatsu",
+        "cost": "$130 / 30 min.",
+        "preview": "A form of physical therapy for the whole body.  Shiatsu techniques include massages with fingers, thumbs, feet and palms; assisted stretching; and joint manipulation and mobilization."
+      },
+      {
+        "img": "spa-menu/item_prev_2.jpg",
+        "title": "Swedish",
+        "cost": "$115 / 60 min.",
+        "preview": "The most widely recognized and commonly used category of massage is the Swedish massage. Swedish massage has shown to be helpful in reducing pain, joint stiffness, and improving function in patients with osteoarthritis of the knee over a period of eight weeks."
+      }
+    ]
+  },
+
+  "aromatherapy": {
+    "items_1": [
+      {
+        "img": "spa-menu/item_prev_2.jpg",
+        "title": "Swedish",
+        "cost": "$115 / 60 min.",
+        "preview": "The most widely recognized and commonly used category of massage is the Swedish massage. Swedish massage has shown to be helpful in reducing pain, joint stiffness, and improving function in patients with osteoarthritis of the knee over a period of eight weeks."
+      },
+      {
+        "img": "spa-menu/item_prev_1.jpg",
+        "title": "Shiatsu",
+        "cost": "$130 / 30 min.",
+        "preview": "A form of physical therapy for the whole body.  Shiatsu techniques include massages with fingers, thumbs, feet and palms; assisted stretching; and joint manipulation and mobilization."
+      },
+      {
+        "img": "spa-menu/item_prev_3.jpg",
+        "title": "Thai",
+        "cost": "$140 / 80 min.",
+        "preview": "Generally speaking, givers of modern Thai massage operate on the hypothesis that the body is permeated with \"lom\", or \"air\", which is inhaled into the lungs and subsequently travels throughout the body along 72,000 pathways called \"sen\", which therapists manipulate manually."
+      },
+      {
+        "img": "spa-menu/item_prev_6.jpg",
+        "title": "Tantric",
+        "cost": "$140 / 60 min.",
+        "preview": "A massage technique popularized by the neotantra movement, and drawing on modern interpretations of tantra."
+      }
+    ],
+    "items_2": [
+      {
+        "img": "spa-menu/item_prev_5.jpg",
+        "title": "Stone",
+        "cost": "$170 / 80 min.",
+        "preview": "A stone massage uses cold or water-heated stones to apply pressure and heat to the body. Stones coated in oil can also be used by the therapist delivering various massaging strokes. The hot stones used are commonly Basalt stones (or lava rocks) which over time have become extremely polished and smooth. As the stones are placed along the recipient's back, they help to retain heat which then deeply penetrates into the muscles."
+      },
+      {
+        "img": "spa-menu/item_prev_4.jpg",
+        "title": "Anti-cellulite",
+        "cost": "$90 / 30 min.",
+        "preview": "Ideal to energise the skin and help break down cellulite with the antioxidant properties of Bellefontaine Vital Massage oil, a perfect blend of apricot, sweet orange and lemon essential oils."
+      }
+    ]
+  },
+
+  "make": {
+    "items_1": [
+      {
+        "img": "spa-menu/item_prev_2.jpg",
+        "title": "Swedish",
+        "cost": "$115 / 60 min.",
+        "preview": "The most widely recognized and commonly used category of massage is the Swedish massage. Swedish massage has shown to be helpful in reducing pain, joint stiffness, and improving function in patients with osteoarthritis of the knee over a period of eight weeks."
+      },
+      {
+        "img": "spa-menu/item_prev_5.jpg",
+        "title": "Stone",
+        "cost": "$170 / 80 min.",
+        "preview": "A stone massage uses cold or water-heated stones to apply pressure and heat to the body. Stones coated in oil can also be used by the therapist delivering various massaging strokes. The hot stones used are commonly Basalt stones (or lava rocks) which over time have become extremely polished and smooth."
+      },
+      {
+        "img": "spa-menu/item_prev_4.jpg",
+        "title": "Anti-cellulite",
+        "cost": "$90 / 30 min.",
+        "preview": "Ideal to energise the skin and help break down cellulite with the antioxidant properties of Bellefontaine Vital Massage oil, a perfect blend of apricot, sweet orange and lemon essential oils."
+      }
+    ],
+    "items_2": [
+      {
+        "img": "spa-menu/item_prev_1.jpg",
+        "title": "Shiatsu",
+        "cost": "$130 / 30 min.",
+        "preview": "A form of physical therapy for the whole body.  Shiatsu techniques include massages with fingers, thumbs, feet and palms; assisted stretching; and joint manipulation and mobilization."
+      },
+      {
+        "img": "spa-menu/item_prev_3.jpg",
+        "title": "Thai",
+        "cost": "$140 / 80 min.",
+        "preview": "Generally speaking, givers of modern Thai massage operate on the hypothesis that the body is permeated with \"lom\", or \"air\", which is inhaled into the lungs and subsequently travels throughout the body along 72,000 pathways called \"sen\", which therapists manipulate manually."
+      },
+      {
+        "img": "spa-menu/item_prev_6.jpg",
+        "title": "Tantric",
+        "cost": "$140 / 60 min.",
+        "preview": "A massage technique popularized by the neotantra movement, and drawing on modern interpretations of tantra."
+      }
+    ]
+  },
+
+  "bridal": {
+    "items_1": [
+      {
+        "img": "spa-menu/item_prev_1.jpg",
+        "title": "Shiatsu",
+        "cost": "$130 / 30 min.",
+        "preview": "A form of physical therapy for the whole body.  Shiatsu techniques include massages with fingers, thumbs, feet and palms; assisted stretching; and joint manipulation and mobilization."
+      },
+      {
+        "img": "spa-menu/item_prev_2.jpg",
+        "title": "Swedish",
+        "cost": "$115 / 60 min.",
+        "preview": "The most widely recognized and commonly used category of massage is the Swedish massage. Swedish massage has shown to be helpful in reducing pain, joint stiffness, and improving function in patients with osteoarthritis of the knee over a period of eight weeks."
+      },
+      {
+        "img": "spa-menu/item_prev_4.jpg",
+        "title": "Anti-cellulite",
+        "cost": "$90 / 30 min.",
+        "preview": "Ideal to energise the skin and help break down cellulite with the antioxidant properties of Bellefontaine Vital Massage oil, a perfect blend of apricot, sweet orange and lemon essential oils."
+      }
+    ],
+    "items_2": [
+      {
+        "img": "spa-menu/item_prev_5.jpg",
+        "title": "Stone",
+        "cost": "$170 / 80 min.",
+        "preview": "A stone massage uses cold or water-heated stones to apply pressure and heat to the body. Stones coated in oil can also be used by the therapist delivering various massaging strokes. The hot stones used are commonly Basalt stones (or lava rocks) which over time have become extremely polished and smooth."
+      },
+      {
+        "img": "spa-menu/item_prev_3.jpg",
+        "title": "Thai",
+        "cost": "$140 / 80 min.",
+        "preview": "Generally speaking, givers of modern Thai massage operate on the hypothesis that the body is permeated with \"lom\", or \"air\", which is inhaled into the lungs and subsequently travels throughout the body along 72,000 pathways called \"sen\", which therapists manipulate manually."
+      },
+      {
+        "img": "spa-menu/item_prev_6.jpg",
+        "title": "Tantric",
+        "cost": "$140 / 60 min.",
+        "preview": "A massage technique popularized by the neotantra movement, and drawing on modern interpretations of tantra."
+      }
+    ]
+  }
+}
+

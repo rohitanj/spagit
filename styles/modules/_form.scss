@@ -1,0 +1,467 @@
+/*************************************
+
+    CUSTOM FORM
+
+    = form-wrap
+    = form-comments
+    = mp-menu
+
+    = datepicker
+    = clockpicker
+
+    = modal form reservation
+
+*************************************/
+
+
+textarea {
+  resize: none;
+  min-height: 200px;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  cursor: pointer;
+}
+
+.noCursor {
+  cursor: default;
+}
+
+.fzReset {
+  font-size: 0;
+}
+
+
+.form-wrap {
+  .input-wrap {
+    margin-bottom: 20px;
+  }
+
+  .label-control {
+    display: inline-block;
+    font-size: 14/18 + em;
+    cursor: pointer;
+  }
+
+  .label-warn {
+    color: $brand-warning;
+  }
+
+  @include media('>sm') {
+    .input-row {
+      margin: 0 -10px;
+    }
+    .input-wrap {
+      padding: 0 10px;
+    }
+  }
+
+  [type=submit] {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+
+  .datepicker,
+  .clockpicker .form-control {
+    font-family: $lato;
+    letter-spacing: $ls;
+    border-radius: $border-radius-base;
+  }
+}
+
+
+/**        =form-reservation         **/
+
+.form-res {
+  .btn {
+    width: 100%;
+  }
+
+  .btn-wrap {
+    margin-top: 0;
+  }
+
+  .number-of-reversed  {
+
+    .br-widget {
+      a {
+        display: inline-block;
+        width: 13px;
+        height: 37px;
+        margin-right: 8px;
+        user-select: none;
+        cursor: pointer;
+        transition: none;
+        background: url($bg-path + 'man.svg') no-repeat;
+      }
+
+      $i: -100%/2; // Number of Icons minus 1
+      .br-active,
+      .br-selected,
+      .br-current {
+        background-position: 50% -40px;
+      }
+    }
+
+    .br-wrapper {
+      position: relative;
+    }
+
+    .br-current-rating {
+      @extend %text-brand-lg;
+      float: right;
+      margin-top: 3px;
+      font-size: 3rem;
+      letter-spacing: 0;
+    }
+
+    input[type='checkbox'] {
+      display: none;
+      margin: 0;
+
+      + label {
+        margin: 0;
+        font-size: 14px;
+        white-space: nowrap;
+        user-select: none;
+
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .fa {
+          width: 14px;
+          height: 14px;
+          margin-right: 8px;
+          background-color: #fff;
+          border: 1px solid $border-light;
+          color: $brand-warning;
+          border-radius: 3px;
+          cursor: pointer;
+
+          &:before {
+            opacity: 0
+          }
+        }
+
+        .span {
+          max-width: 130px;
+          line-height: 20px;
+          font-family: $font-family-serif;
+          font-size: 14px;
+          color: #000;
+          font-weight: 400;
+          text-transform: none;
+          letter-spacing: normal;
+          white-space: normal;
+        }
+
+        &:hover .span,
+        &:focus .span {
+          color: $gray-base;
+        }
+      }
+
+      &:checked + label .fa:before {
+        opacity: 1;
+      }
+    }
+
+    .disable {
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+      }
+
+      a {
+        opacity: .4;
+      }
+    }
+  }
+
+  @include media('<sm') {
+    .br-wrapper {
+      text-align: right;
+    }
+  }
+
+  @include media('<xs') {
+    .number-of-reversed .br-current-rating {
+      display: block;
+      float: none;
+      margin-top: 10px;
+      margin-bottom: -10px;
+      font-size: 37px;
+    }
+
+    .br-wrapper,
+    .number-of-reversed .br-current-rating {
+      text-align: center;
+    }
+
+    .number-of-reversed input[type='checkbox'] {
+      + label {
+        width: 100%;
+        max-width: 152px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+.mp-menu {
+  .form-res {
+    padding: 15px;
+
+    .number-of-reversed {
+      width: 100%;
+      max-width: none;
+      margin: 0 auto;
+      white-space: nowrap;
+
+      .input-wrap {
+        display: inline-block;
+        width: 48.5%;
+        margin-bottom: 0;
+      }
+
+      .br-widget a {
+        width: 12px;
+        margin-right: 5px;
+      }
+    }
+    .number-of-reversed .br-current-rating {
+      float: none;
+      display: inline-block;
+      vertical-align: top;
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+    .br-wrapper,
+    .number-of-reversed .br-current-rating {
+      text-align: left;
+    }
+
+    .number-of-reversed input[type='checkbox'] {
+      + label {
+        width: 100%;
+        max-width: none;
+        white-space: nowrap;
+
+        .fa {
+          margin-right: 4px;
+          width: 12px;
+          height: 12px;
+        }
+
+        span {
+          width: 100%;
+          max-width: 110px;
+          font-size: 13px;
+          white-space: normal;
+        }
+      }
+    }
+
+    .btn {
+      padding: 15px 0;
+    }
+  }
+}
+
+
+.datepicker table tr td,
+.popover {
+  font-family: $lato;
+}
+
+
+/**        = datepicker         **/
+.datepicker {
+  font-family: $lato;
+  text-transform: uppercase;
+
+  table > thead {
+    font-weight: 700;
+    border-bottom: 1px solid $border-light;
+
+    > tr + tr > th {
+      background-color: #fff;
+      &:hover {
+        background-color: #fff;
+        color: $gray-base;
+      }
+    }
+  }
+
+  .prev, .next {
+    position: relative;
+    font-family: FontAwesome;
+    text-indent: -9999px;
+    color: $brand-warning;
+
+    &:after {
+      text-indent: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover:after,
+    &:focus:after {
+      color: $gray-dark;
+    }
+
+    &:active:after {
+      color: $gray-light;
+    }
+  }
+
+  .prev:after {
+    content: "\f104";
+  }
+
+  .next:after {
+    content: "\f105";
+  }
+}
+
+
+/**        =clockpicker         **/
+.popover {
+  padding: 0;
+  border-radius: 2px;
+  border-color: transparent;
+
+  &-content {
+    background-color: #fafafa;
+  }
+
+  .clockpicker-button {
+    @extend .btn--warn;
+    border-width: 0;
+    border-radius: 0;
+  }
+
+  .clockpicker-plate {
+    border-color: $brand-warning;
+  }
+
+  .popover-title {
+    color: $brand-warning;
+  }
+
+  .popover-title span {
+    color: $brand-warning;
+  }
+}
+
+.clockpicker-tick.active,
+.clockpicker-tick:hover {
+  background-color: rgba($brand-warning, .25);
+}
+
+.clockpicker-canvas-bg-trans,
+.clockpicker-canvas-bg {
+  fill: rgba($brand-warning, .25);
+}
+
+.clockpicker-canvas-bearing, .clockpicker-canvas-fg {
+  fill: $brand-warning;
+}
+
+.clockpicker-canvas line,
+.clockpicker-canvas-bearing, .clockpicker-canvas-fg {
+  stroke: $brand-warning;
+}
+
+
+/**        = modal form reservation         **/
+
+.modal {
+  .modal-dialog {
+    width: 100%;
+    max-width: 570px;
+    padding: 0 0 50/18 + em;
+    background-color: #fff;
+    @include shadow-2dp();
+
+    .close {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 40/570*100%;
+      margin-right: 40/570*100%;
+      font-size: 24px;
+      line-height: 1;
+      z-index: 1;
+      @include transition--all();
+    }
+
+  .modal-content {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    box-shadow: none;
+    border-width: 0;
+    box-shadow: none;
+  }
+
+  .modal-body {
+    padding: 0;
+  }
+
+  .hr-heading {
+    margin-bottom: 30/18 + em;
+  }
+
+  .modal-header {
+    padding: 0;
+    border-bottom-width: 0;
+
+      span {
+        display: inline-block;
+        line-height: 1;
+      }
+    }
+  }
+
+  .form-res {
+    .btn-wrap {
+      margin-bottom: 0;
+    }
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0;
+  }
+
+  @include media('<sm') {
+    .modal-dialog {
+      margin: 10px auto;
+    }
+  }
+
+  @include media('<xs') {
+    margin: 0 -17px 0 0;
+    .modal-dialog {
+      margin: 0 auto;
+    }
+
+    .modal-content {
+      padding: 0 25px;
+    }
+  }
+}

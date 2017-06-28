@@ -1,0 +1,398 @@
+/*************************************
+
+    CUSTOM NAVBAR
+
+    = page-header
+    = navbar
+      ¬ navbar-fixed  - page-header-fixed modifier
+      ¬ menu-trigger
+      ¬ brand
+      ¬ logo
+      ¬ social-list
+      ¬ reservation
+      ¬ dropdown-menu
+
+    [states and dropdown-menu]
+    [affix - transform menu]
+
+*************************************/
+
+
+$navbar-height: 78px;
+
+.navbar-fixed,
+.page-header {
+  width: 100%;
+}
+
+.page-header {
+  min-height: 77px;
+
+  @include media('>sm') {
+    min-height: 156px; // <1600
+  }
+
+  @include media('<sm') {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @include media('>1600px') {
+    min-height: 115px; // >1600
+  }
+}
+
+.navbar {
+  left: 0;
+  right: 0;
+  margin: 0;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  z-index: $zindex-navbar-fixed;
+  @include shadow-8dp();
+
+  &.navbar-fixed {
+    position: fixed;
+    @include shadow-2dp();
+  }
+
+  @include media('>sm') {
+    &.navbar-fixed {
+      @include shadow-8dp();
+    }
+  }
+
+
+  &-header {
+    float: none;
+    left: 0;
+  }
+
+  .menu-trigger {
+    margin: (($navbar-height - 30) / 2) 0;
+  }
+
+  &-brand {
+    .navbar > .container & {
+      margin-left: 0;
+    }
+    height: auto;
+    display: block;
+    padding: 0;
+    border-right: 1px solid transparent;
+    z-index: 1000;
+
+    .logo {
+      height: 47px;
+      width: 47px;
+      display: inline-block;
+      @include navbar-vertical-align(47px);
+    }
+  }
+
+  .social-list {
+    padding-left: 25px;
+    border-left: 1px solid transparent;
+
+    > li > a {
+      @include navbar-vertical-align(36px);
+    }
+  }
+
+  a:focus {
+    color: $link-hover-color;
+  }
+
+  &__reservation {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    min-width: 220px;
+    margin: 0;
+    margin-left: -110px;
+    text-align: center;
+    letter-spacing: $ls;
+
+    > li {
+      float: none;
+      display: inline-block;
+    }
+
+    > li > a {
+      padding: 0;
+      @include navbar-vertical-align(20px);
+
+      .navbar & {
+        color: $brand-warning;
+      }
+
+      .fa {
+        font-size: 1.11em;
+        padding-right: 10px;
+        letter-spacing: normal;
+      }
+    }
+
+    @include media ('<480px') {
+      min-width: 150px;
+      margin-left: -75px;
+
+      > li > a {
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+
+/**        [states and dropdown-menu]         **/
+.navbar-menu {
+  li a {
+    letter-spacing: $ls;
+  }
+
+  > li {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+
+      .dropdown-menu {
+        left: auto;
+        right: -100%;
+        z-index: 1001;
+      }
+    }
+  }
+
+  > li > a {
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    color: $link-color;
+    @include padding-vertical-align(20px);
+    z-index: 1001;
+
+    > span:first-child {
+      &:after {
+        position: absolute;
+        display: inline-block;
+        content: '';
+        bottom: -1px;
+        transform: translateY(-9px);
+        opacity: 0;
+        left: 0;
+        width: 97%;
+        height: 0;
+        background-color: $brand-warning;
+        transition: height 0.26s, opacity 0.26s, transform 0.26s;
+      }
+    }
+
+    .fa-caret-down {
+      font-size: 11px;
+      margin-left: 4px;
+    }
+  }
+
+  .dropdown-menu {
+    padding: 0 15px;
+    min-width: 165px;
+    display: block;
+    top: 116%;
+    visibility: hidden;
+    opacity: 0;
+    border: none;
+    transition: top 0.3s ease 0s, visibility 0.2s ease 0.2s, opacity 0.2s ease 0.1s;
+    @include shadow();
+
+    a {
+      font-size: 14px;
+    }
+
+    > li > a {
+      padding: 15px 0;
+      border-bottom: 1px solid $hr-border;
+      font-weight: 700;
+      line-height: 1;
+
+      &:hover,
+      &:focus,
+      &:active,
+      &.active {
+        color: $gray-base;
+      }
+    }
+
+    li {
+      &:last-child > a {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  > li {
+    &:hover {
+      .dropdown-menu {
+        visibility: visible;
+        top: 100%;
+        opacity: 1;
+        transition: top 0.29s ease 0s;
+      }
+
+      > a > span:first-child:after {
+        bottom: -1px;
+        height: 4px;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@include media('>md') {
+  .navbar-menu > li {
+    margin-right: 50px;
+  }
+}
+
+@include media('<1600px') {
+  .navbar__topline {
+    border-bottom: 1px solid rgba(#000, .2);
+  }
+  .navbar-menu {
+    float: none;
+    font-size: 0;
+    text-align: center;
+
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+}
+
+
+$navbar-height: 115px;
+@include media('>1600px') {
+  .navbar__topline {
+    position: absolute;
+    width: 100%;
+    border-bottom-color: rgba(#000, 0);
+  }
+  .navbar-header {
+    padding: 0 50px;
+    width: auto;
+    margin: 0;
+  }
+
+  .navbar-nav a  {
+    font-size: 18px;
+  }
+
+  .navbar-brand {
+    padding-right: 50px;
+    border-right: 1px solid $hr-border;
+
+    .svg {
+      @include navbar-vertical-align(47px);
+    }
+  }
+
+  .navbar .social-list {
+    padding-left: 50px;
+    border-left: 1px solid $hr-border;
+
+    > li > a {
+      @include navbar-vertical-align(36px);
+    }
+  }
+
+  .navbar-menu > li > a {
+    @include padding-vertical-align(20px);
+  }
+
+  .navbar__reservation {
+    position: static;
+    float: right;
+    text-align: right;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+
+    > li > a {
+      @include navbar-vertical-align(20px);
+    }
+  }
+}
+
+
+/**        [affix - transform menu]         **/
+$navbar-height: 57px;
+.affix {
+  background-color: #fff;
+
+  .navbar__topline {
+    border-bottom-color: rgba(#000, .12);
+
+  }
+
+  .navbar-brand {
+    .svg {
+      height: 33px;
+      width: 33px;
+      margin: ((57px - 33px) / 2) 0;
+    }
+  }
+
+  .social-list > li > a {
+    margin: ((57px - 36) / 2) 0;
+  }
+
+  .navbar-menu > li > a {
+    padding: ((57px - 20) / 2) 0;
+    font-size: 12px;
+  }
+  .navbar__reservation > li > a {
+    margin: ((57px - 20) / 2) 0;
+    font-size: 12px;
+  }
+  .menu-trigger {
+    margin: ((57px - 30) / 2) 0;
+  }
+
+  @include media('>sm') {
+    top: -57px;
+  }
+
+  @include media('>1600px') {
+    top: -2px;
+    .navbar-menu > li > a,
+    .navbar__reservation > li > a {
+      font-size: 15px;
+    }
+
+    .navbar-brand {
+      .svg {
+        margin: ((78px - 33) / 2) 0;
+      }
+    }
+    .social-list > li > a {
+      margin: ((78px - 36) / 2) 0;
+    }
+
+    .navbar-menu > li > a {
+      padding: ((78px - 20) / 2) 0;
+    }
+    .navbar__reservation > li > a {
+      margin: ((78px - 20) / 2) 0;
+    }
+  }
+
+  &:hover {
+    top: 0;
+  }
+}

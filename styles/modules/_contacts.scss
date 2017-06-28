@@ -1,0 +1,105 @@
+/*************************************
+
+    Contact elements
+
+    = contacts-list
+    = social-list
+    = contacts-share
+    = map
+
+*************************************/
+
+
+.social-list {
+  font-size: 0;
+
+  > li {
+    display: inline-block;
+    margin-right: 6px;
+    margin-left: -2px;
+    letter-spacing: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  > li > a {
+    font-size: 1.8rem;
+  }
+}
+
+
+.contacts-list {
+
+  &__top {
+    text-align: left;
+  }
+
+  .h3 {
+    display: block;
+  }
+
+  &__item {
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+
+
+  [href^=tel],
+  [href^=mailto],
+  .address {
+    display: inline-block;
+    @extend %text-brand-xs;
+    line-height: 20/14 + em;
+  }
+
+  @include media('<sm') {
+    text-align: center;
+
+    &__item {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#map {
+  width: 100%;
+}
+
+.page-home #map {
+  height: 360px;
+}
+
+.main-contacts {
+  padding-bottom: 80/18 + em;
+
+  #map {
+    height: 551px;
+    margin-top: 6/18 + em;
+
+    @include media('<lg') {
+      height: 486px;
+    }
+
+    @include media('<md') {
+      height: 407px;
+    }
+  }
+
+  @include media('<sm') {
+    padding-bottom: 0;
+
+    #map {
+      height: 360px;
+      margin-top: 80/18 + em;
+    }
+  }
+}
+
+
+.contacts-share {
+  @include media('<sm') {
+    text-align: center;
+  }
+}
