@@ -9,7 +9,7 @@ function googleMapsInit() {
         scrollwheel:  false,
 
         // The latitude and longitude to center the map (always required)
-        center: new google.maps.LatLng(-34.8679988, 138.5118251),
+        center: new google.maps.LatLng(41.117734, -85.138367),
 
         // How you would like to style the map.
         // This is where you would paste any style found on Snazzy Maps.
